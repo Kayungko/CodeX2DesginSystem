@@ -2,6 +2,8 @@
 
 This reference summarizes the successful build from `references/awesome-design-md-cn/design-md/figma/DESIGN.md`.
 
+Status: pre-standardization case study. The first successful build used the earlier 7-section structure. The current standard library contract uses 10 sections and is documented in `docs/MULTI_THEME_STANDARDIZATION_PROGRESS.md`.
+
 ## Source
 
 - `DESIGN.md`
@@ -10,13 +12,13 @@ This reference summarizes the successful build from `references/awesome-design-m
 
 The output is not the official Figma design system. It is a Figma inspired, reference-based system.
 
-## Final Structure
+## Original Final Structure
 
-The final Figma file uses one page:
+The first successful Figma file used one page:
 
 - `Figma Inspired`
 
-The page contains:
+The page originally contained:
 
 - `Figma Inspired / Overview`
 - `Figma Inspired / Foundations`
@@ -25,6 +27,23 @@ The page contains:
 - `Figma Inspired / Patterns`
 - `Figma Inspired / Examples`
 - `Figma Inspired / Reference Notes`
+
+## Current Standardized Structure
+
+The current standardized page keeps one page per style and uses:
+
+- `Figma Inspired / Overview`
+- `Figma Inspired / Foundations`
+- `Figma Inspired / Core Components`
+- `Figma Inspired / Form & Input Controls`
+- `Figma Inspired / Navigation & Layout`
+- `Figma Inspired / Feedback & Overlays`
+- `Figma Inspired / Theme-Specific Components`
+- `Figma Inspired / Patterns`
+- `Figma Inspired / Examples`
+- `Figma Inspired / Reference Notes`
+
+The old `Editor Controls` section is historical; editor-level controls now belong to the standard component sections or theme-specific area depending on their role.
 
 ## Token Counts
 

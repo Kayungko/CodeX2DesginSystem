@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "design-md-system-inventory/v2",
+  "styleName": "Spotify Inspired",
+  "sections": [
+    {
+      "name": "Spotify Inspired / Overview",
+      "standardName": "Overview",
+      "index": 0,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Foundations",
+      "standardName": "Foundations",
+      "index": 1,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Core Components",
+      "standardName": "Core Components",
+      "index": 2,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Form & Input Controls",
+      "standardName": "Form & Input Controls",
+      "index": 3,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Navigation & Layout",
+      "standardName": "Navigation & Layout",
+      "index": 4,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Feedback & Overlays",
+      "standardName": "Feedback & Overlays",
+      "index": 5,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Theme-Specific Components",
+      "standardName": "Theme-Specific Components",
+      "index": 6,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Patterns",
+      "standardName": "Patterns",
+      "index": 7,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Examples",
+      "standardName": "Examples",
+      "index": 8,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Spotify Inspired / Reference Notes",
+      "standardName": "Reference Notes",
+      "index": 9,
+      "id": null,
+      "bounds": null
+    }
+  ],
+  "componentSets": [
+    {
+      "name": "Spotify / Button",
+      "standardName": "Button",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Icon Button",
+      "standardName": "Icon Button",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Link",
+      "standardName": "Link",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Section Header",
+      "standardName": "Section Header",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Type Sample",
+      "standardName": "Type Sample",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Role"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Spacing Scale Item",
+      "standardName": "Spacing Scale Item",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Size"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Radius Scale Item",
+      "standardName": "Radius Scale Item",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Radius"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Elevation Card",
+      "standardName": "Elevation Card",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Level"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Search Field",
+      "standardName": "Search Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Slider",
+      "standardName": "Slider",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Text Field",
+      "standardName": "Text Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State",
+        "Validation"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Checkbox",
+      "standardName": "Checkbox",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Radio",
+      "standardName": "Radio",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Switch",
+      "standardName": "Switch",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Tabs",
+      "standardName": "Tabs",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Segmented Control",
+      "standardName": "Segmented Control",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Panel",
+      "standardName": "Panel",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Divider",
+      "standardName": "Divider",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Orientation",
+        "Tone"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Navigation Bar",
+      "standardName": "Navigation Bar",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Menu Item",
+      "standardName": "Menu Item",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Tooltip",
+      "standardName": "Tooltip",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Placement",
+        "Tone"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Empty State",
+      "standardName": "Empty State",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "Action"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Command Menu",
+      "standardName": "Command Menu",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Play Button",
+      "standardName": null,
+      "section": "Theme-Specific Components",
+      "sourceStatus": "Theme-Specific",
+      "variantCount": 1,
+      "variantProperties": [],
+      "id": null
+    },
+    {
+      "name": "Spotify / Content Card",
+      "standardName": "Card",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Badge / Tag",
+      "standardName": "Badge / Tag",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "Emphasis",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Select / Dropdown",
+      "standardName": "Select / Dropdown",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Sidebar / Rail",
+      "standardName": "Sidebar / Rail",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Table / Data Row",
+      "standardName": "Table / Data Row",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Toast / Notification",
+      "standardName": "Toast / Notification",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Progress / Loading",
+      "standardName": "Progress / Loading",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Spotify / Modal / Dialog",
+      "standardName": "Modal / Dialog",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Size",
+        "State"
+      ],
+      "id": null
+    }
+  ],
+  "validation": {
+    "overlaps": [],
+    "overWidth": [],
+    "structuralFrameFills": [],
+    "menuAlignmentWarnings": [],
+    "instanceDetachWarnings": [],
+    "bindingSummary": {
+      "boundVisualNodeCount": null,
+      "hardcodedFillWarnings": []
+    },
+    "sourceLabelWarnings": []
+  },
+  "contractProfile": "tier1-31-no-blocks"
+}

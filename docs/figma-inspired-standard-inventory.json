@@ -1,0 +1,552 @@
+{
+  "schemaVersion": "design-md-system-inventory/v2",
+  "styleName": "Figma Inspired",
+  "sections": [
+    {
+      "name": "Figma Inspired / Overview",
+      "standardName": "Overview",
+      "index": 0,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Foundations",
+      "standardName": "Foundations",
+      "index": 1,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Core Components",
+      "standardName": "Core Components",
+      "index": 2,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Form & Input Controls",
+      "standardName": "Form & Input Controls",
+      "index": 3,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Navigation & Layout",
+      "standardName": "Navigation & Layout",
+      "index": 4,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Feedback & Overlays",
+      "standardName": "Feedback & Overlays",
+      "index": 5,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Theme-Specific Components",
+      "standardName": "Theme-Specific Components",
+      "index": 6,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Patterns",
+      "standardName": "Patterns",
+      "index": 7,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Examples",
+      "standardName": "Examples",
+      "index": 8,
+      "id": null,
+      "bounds": null
+    },
+    {
+      "name": "Figma Inspired / Reference Notes",
+      "standardName": "Reference Notes",
+      "index": 9,
+      "id": null,
+      "bounds": null
+    }
+  ],
+  "componentSets": [
+    {
+      "name": "v2 / Button",
+      "standardName": "Button",
+      "section": "Core Components",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Icon Button",
+      "standardName": "Icon Button",
+      "section": "Core Components",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Button",
+      "standardName": "Button",
+      "section": "Core Components",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Icon Button",
+      "standardName": "Icon Button",
+      "section": "Core Components",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Link",
+      "standardName": "Link",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Section Header",
+      "standardName": "Section Header",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Type Sample",
+      "standardName": "Type Sample",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Role"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Spacing Scale Item",
+      "standardName": "Spacing Scale Item",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Size"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Radius Scale Item",
+      "standardName": "Radius Scale Item",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Radius"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Elevation Card",
+      "standardName": "Elevation Card",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Level"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Text Field",
+      "standardName": "Text Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State",
+        "Validation"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Search Field",
+      "standardName": "Search Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Text Field",
+      "standardName": "Text Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State",
+        "Validation"
+      ],
+      "id": null
+    },
+    {
+      "name": "Search Field",
+      "standardName": "Search Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Checkbox",
+      "standardName": "Checkbox",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Radio",
+      "standardName": "Radio",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Switch",
+      "standardName": "Switch",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Slider",
+      "standardName": "Slider",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Card",
+      "standardName": "Card",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Card",
+      "standardName": "Card",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Segmented Control Item",
+      "standardName": "Segmented Control",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Navigation Bar",
+      "standardName": "Navigation Bar",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Tabs",
+      "standardName": "Tabs",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Panel",
+      "standardName": "Panel",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Divider",
+      "standardName": "Divider",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Orientation",
+        "Tone"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Menu Item",
+      "standardName": "Menu Item",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Observed",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Tooltip",
+      "standardName": "Tooltip",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Placement",
+        "Tone"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Empty State",
+      "standardName": "Empty State",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "Action"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Command Menu",
+      "standardName": "Command Menu",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "v2 / Product Tab",
+      "standardName": null,
+      "section": "Theme-Specific Components",
+      "sourceStatus": "Theme-Specific",
+      "variantCount": 1,
+      "variantProperties": [],
+      "id": null
+    },
+    {
+      "name": "Product Tab",
+      "standardName": null,
+      "section": "Theme-Specific Components",
+      "sourceStatus": "Theme-Specific",
+      "variantCount": 1,
+      "variantProperties": [],
+      "id": null
+    },
+    {
+      "name": "v2 / Disclosure",
+      "standardName": null,
+      "section": "Theme-Specific Components",
+      "sourceStatus": "Theme-Specific",
+      "variantCount": 1,
+      "variantProperties": [],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Badge / Tag",
+      "standardName": "Badge / Tag",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "Emphasis",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Select / Dropdown",
+      "standardName": "Select / Dropdown",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Sidebar / Rail",
+      "standardName": "Sidebar / Rail",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Table / Data Row",
+      "standardName": "Table / Data Row",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Toast / Notification",
+      "standardName": "Toast / Notification",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Progress / Loading",
+      "standardName": "Progress / Loading",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": null
+    },
+    {
+      "name": "Figma Inspired / Modal / Dialog",
+      "standardName": "Modal / Dialog",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Size",
+        "State"
+      ],
+      "id": null
+    }
+  ],
+  "validation": {
+    "overlaps": [],
+    "overWidth": [],
+    "structuralFrameFills": [],
+    "menuAlignmentWarnings": [],
+    "instanceDetachWarnings": [],
+    "bindingSummary": {
+      "boundVisualNodeCount": null,
+      "hardcodedFillWarnings": []
+    },
+    "sourceLabelWarnings": []
+  },
+  "contractProfile": "tier1-31-no-blocks"
+}

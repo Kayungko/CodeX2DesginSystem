@@ -1,0 +1,591 @@
+{
+  "schemaVersion": "design-md-system-inventory/v2",
+  "styleName": "Sample",
+  "pageId": "sample-page",
+  "pageName": "Sample",
+  "sections": [
+    {
+      "name": "Sample / Overview",
+      "standardName": "Overview",
+      "index": 0,
+      "id": "sample-section-0",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Foundations",
+      "standardName": "Foundations",
+      "index": 1,
+      "id": "sample-section-1",
+      "bounds": {
+        "x": 0,
+        "y": 1000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Core Components",
+      "standardName": "Core Components",
+      "index": 2,
+      "id": "sample-section-2",
+      "bounds": {
+        "x": 0,
+        "y": 2000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Form & Input Controls",
+      "standardName": "Form & Input Controls",
+      "index": 3,
+      "id": "sample-section-3",
+      "bounds": {
+        "x": 0,
+        "y": 3000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Navigation & Layout",
+      "standardName": "Navigation & Layout",
+      "index": 4,
+      "id": "sample-section-4",
+      "bounds": {
+        "x": 0,
+        "y": 4000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Feedback & Overlays",
+      "standardName": "Feedback & Overlays",
+      "index": 5,
+      "id": "sample-section-5",
+      "bounds": {
+        "x": 0,
+        "y": 5000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Theme-Specific Components",
+      "standardName": "Theme-Specific Components",
+      "index": 6,
+      "id": "sample-section-6",
+      "bounds": {
+        "x": 0,
+        "y": 6000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Blocks",
+      "standardName": "Blocks",
+      "index": 7,
+      "id": "sample-section-7",
+      "bounds": {
+        "x": 0,
+        "y": 7000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Patterns",
+      "standardName": "Patterns",
+      "index": 8,
+      "id": "sample-section-8",
+      "bounds": {
+        "x": 0,
+        "y": 7000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Examples",
+      "standardName": "Examples",
+      "index": 9,
+      "id": "sample-section-9",
+      "bounds": {
+        "x": 0,
+        "y": 8000,
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "name": "Sample / Reference Notes",
+      "standardName": "Reference Notes",
+      "index": 10,
+      "id": "sample-section-10",
+      "bounds": {
+        "x": 0,
+        "y": 9000,
+        "width": 1200,
+        "height": 800
+      }
+    }
+  ],
+  "componentSets": [
+    {
+      "name": "Sample / Button",
+      "standardName": "Button",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": "sample-component-0"
+    },
+    {
+      "name": "Sample / Icon Button",
+      "standardName": "Icon Button",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": "sample-component-1"
+    },
+    {
+      "name": "Sample / Link",
+      "standardName": "Link",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": "sample-component-2"
+    },
+    {
+      "name": "Sample / Badge / Tag",
+      "standardName": "Badge / Tag",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "Emphasis",
+        "State"
+      ],
+      "id": "sample-component-3"
+    },
+    {
+      "name": "Sample / Text Field",
+      "standardName": "Text Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State",
+        "Validation"
+      ],
+      "id": "sample-component-4"
+    },
+    {
+      "name": "Sample / Search Field",
+      "standardName": "Search Field",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": "sample-component-5"
+    },
+    {
+      "name": "Sample / Select / Dropdown",
+      "standardName": "Select / Dropdown",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": "sample-component-6"
+    },
+    {
+      "name": "Sample / Checkbox",
+      "standardName": "Checkbox",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": "sample-component-7"
+    },
+    {
+      "name": "Sample / Radio",
+      "standardName": "Radio",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": "sample-component-8"
+    },
+    {
+      "name": "Sample / Switch",
+      "standardName": "Switch",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Checked",
+        "State"
+      ],
+      "id": "sample-component-9"
+    },
+    {
+      "name": "Sample / Slider",
+      "standardName": "Slider",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": "sample-component-10"
+    },
+    {
+      "name": "Sample / Navigation Bar",
+      "standardName": "Navigation Bar",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": "sample-component-11"
+    },
+    {
+      "name": "Sample / Sidebar / Rail",
+      "standardName": "Sidebar / Rail",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": "sample-component-12"
+    },
+    {
+      "name": "Sample / Tabs",
+      "standardName": "Tabs",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": "sample-component-13"
+    },
+    {
+      "name": "Sample / Segmented Control",
+      "standardName": "Segmented Control",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": "sample-component-14"
+    },
+    {
+      "name": "Sample / Card",
+      "standardName": "Card",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": "sample-component-15"
+    },
+    {
+      "name": "Sample / Panel",
+      "standardName": "Panel",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": "sample-component-16"
+    },
+    {
+      "name": "Sample / Divider",
+      "standardName": "Divider",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Orientation",
+        "Tone"
+      ],
+      "id": "sample-component-17"
+    },
+    {
+      "name": "Sample / Table / Data Row",
+      "standardName": "Table / Data Row",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": "sample-component-18"
+    },
+    {
+      "name": "Sample / Tooltip",
+      "standardName": "Tooltip",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Placement",
+        "Tone"
+      ],
+      "id": "sample-component-19"
+    },
+    {
+      "name": "Sample / Toast / Notification",
+      "standardName": "Toast / Notification",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": "sample-component-20"
+    },
+    {
+      "name": "Sample / Progress / Loading",
+      "standardName": "Progress / Loading",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": "sample-component-21"
+    },
+    {
+      "name": "Sample / Empty State",
+      "standardName": "Empty State",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "Action"
+      ],
+      "id": "sample-component-22"
+    },
+    {
+      "name": "Sample / Modal / Dialog",
+      "standardName": "Modal / Dialog",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Size",
+        "State"
+      ],
+      "id": "sample-component-23"
+    },
+    {
+      "name": "Sample / Command Menu",
+      "standardName": "Command Menu",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": "sample-component-24"
+    },
+    {
+      "name": "Sample / Menu Item",
+      "standardName": "Menu Item",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Selected",
+        "State"
+      ],
+      "id": "sample-component-25"
+    },
+    {
+      "name": "Sample / Section Header",
+      "standardName": "Section Header",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Density"
+      ],
+      "id": "sample-component-26"
+    },
+    {
+      "name": "Sample / Type Sample",
+      "standardName": "Type Sample",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Role"
+      ],
+      "id": "sample-component-27"
+    },
+    {
+      "name": "Sample / Spacing Scale Item",
+      "standardName": "Spacing Scale Item",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Size"
+      ],
+      "id": "sample-component-28"
+    },
+    {
+      "name": "Sample / Radius Scale Item",
+      "standardName": "Radius Scale Item",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Radius"
+      ],
+      "id": "sample-component-29"
+    },
+    {
+      "name": "Sample / Elevation Card",
+      "standardName": "Elevation Card",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 1,
+      "variantProperties": [
+        "Level"
+      ],
+      "id": "sample-component-30"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Sample / Dashboard Shell",
+      "category": "Dashboard",
+      "section": "Blocks",
+      "id": "sample-block-0",
+      "instanceCount": 4,
+      "requiredComponents": [
+        "Sidebar / Rail",
+        "Navigation Bar",
+        "Card",
+        "Table / Data Row"
+      ]
+    },
+    {
+      "name": "Sample / Login Page",
+      "category": "Authentication",
+      "section": "Blocks",
+      "id": "sample-block-1",
+      "instanceCount": 4,
+      "requiredComponents": [
+        "Card",
+        "Text Field",
+        "Button",
+        "Label"
+      ]
+    },
+    {
+      "name": "Sample / Settings Layout",
+      "category": "Settings",
+      "section": "Blocks",
+      "id": "sample-block-2",
+      "instanceCount": 4,
+      "requiredComponents": [
+        "Sidebar / Rail",
+        "Tabs",
+        "Text Field",
+        "Button"
+      ]
+    },
+    {
+      "name": "Sample / Hero Section",
+      "category": "Landing Page",
+      "section": "Blocks",
+      "id": "sample-block-3",
+      "instanceCount": 3,
+      "requiredComponents": [
+        "Hero CTA Group",
+        "Button",
+        "Button Group"
+      ]
+    },
+    {
+      "name": "Sample / Empty State Pattern",
+      "category": "Utility",
+      "section": "Blocks",
+      "id": "sample-block-4",
+      "instanceCount": 2,
+      "requiredComponents": [
+        "Empty State",
+        "Button"
+      ]
+    }
+  ],
+  "validation": {
+    "overlaps": [],
+    "overWidth": [],
+    "structuralFrameFills": [],
+    "menuAlignmentWarnings": [],
+    "instanceDetachWarnings": [],
+    "bindingSummary": {},
+    "hardcodedFillWarnings": [],
+    "bindingWarnings": [],
+    "screenshotWarnings": [],
+    "sourceLabelWarnings": []
+  },
+  "screenshots": [],
+  "contractProfile": "tier1-31-no-blocks"
+}

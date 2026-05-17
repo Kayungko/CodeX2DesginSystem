@@ -1,0 +1,211 @@
+{
+  "version": "2026-05-17",
+  "required_sections": [
+    "Overview",
+    "Foundations",
+    "Core Components",
+    "Form & Input Controls",
+    "Navigation & Layout",
+    "Feedback & Overlays",
+    "Theme-Specific Components",
+    "Blocks",
+    "Patterns",
+    "Examples",
+    "Reference Notes"
+  ],
+  "required_components": [
+    { "name": "Button", "area": "Actions", "axes": ["Variant", "Size", "State"] },
+    { "name": "Icon Button", "area": "Actions", "axes": ["Variant", "Size", "State"] },
+    { "name": "Link", "area": "Actions", "axes": ["Tone", "State"] },
+    { "name": "Badge / Tag", "area": "Actions", "axes": ["Tone", "Emphasis", "State"] },
+    { "name": "Button Group", "area": "Actions", "axes": ["Variant", "Size", "State"] },
+    { "name": "Text Field", "area": "Inputs", "axes": ["Value", "State", "Validation"] },
+    { "name": "Search Field", "area": "Inputs", "axes": ["Value", "State"] },
+    { "name": "Select / Dropdown", "area": "Inputs", "axes": ["Value", "State"] },
+    { "name": "Checkbox", "area": "Inputs", "axes": ["Checked", "State"] },
+    { "name": "Radio", "area": "Inputs", "axes": ["Checked", "State"] },
+    { "name": "Switch", "area": "Inputs", "axes": ["Checked", "State"] },
+    { "name": "Slider", "area": "Inputs", "axes": ["Value", "State"] },
+    { "name": "Calendar / Date Picker", "area": "Inputs", "axes": ["Variant", "State"] },
+    { "name": "Combobox", "area": "Inputs", "axes": ["Value", "State"] },
+    { "name": "Input OTP", "area": "Inputs", "axes": ["Value", "State"] },
+    { "name": "Input Group", "area": "Inputs", "axes": ["Variant", "State"] },
+    { "name": "Navigation Bar", "area": "Navigation", "axes": ["Density", "State"] },
+    { "name": "Sidebar / Rail", "area": "Navigation", "axes": ["Density", "State"] },
+    { "name": "Tabs", "area": "Navigation", "axes": ["Selected", "State"] },
+    { "name": "Segmented Control", "area": "Navigation", "axes": ["Selected", "State"] },
+    { "name": "Breadcrumb", "area": "Navigation", "axes": ["Density", "State"] },
+    { "name": "Pagination", "area": "Navigation", "axes": ["Density", "State"] },
+    { "name": "Card", "area": "Surfaces", "axes": ["Variant", "State"] },
+    { "name": "Panel", "area": "Surfaces", "axes": ["Variant", "State"] },
+    { "name": "Divider", "area": "Surfaces", "axes": ["Orientation", "Tone"] },
+    { "name": "Table / Data Row", "area": "Surfaces", "axes": ["Density", "State"] },
+    { "name": "Accordion", "area": "Surfaces", "axes": ["Variant", "State"] },
+    { "name": "Avatar", "area": "Surfaces", "axes": ["Variant", "Size", "State"] },
+    { "name": "Carousel", "area": "Surfaces", "axes": ["Variant", "State"] },
+    { "name": "Collapsible", "area": "Surfaces", "axes": ["State"] },
+    { "name": "Scroll Area", "area": "Surfaces", "axes": ["Variant", "State"] },
+    { "name": "Tooltip", "area": "Feedback", "axes": ["Placement", "Tone"] },
+    { "name": "Toast / Notification", "area": "Feedback", "axes": ["Tone", "State"] },
+    { "name": "Progress / Loading", "area": "Feedback", "axes": ["Variant", "State"] },
+    { "name": "Empty State", "area": "Feedback", "axes": ["Density", "Action"] },
+    { "name": "Alert", "area": "Feedback", "axes": ["Tone", "State"] },
+    { "name": "Skeleton", "area": "Feedback", "axes": ["Variant", "Density"] },
+    { "name": "Spinner", "area": "Feedback", "axes": ["Size", "Tone"] },
+    { "name": "Modal / Dialog", "area": "Overlays", "axes": ["Size", "State"] },
+    { "name": "Command Menu", "area": "Overlays", "axes": ["Density", "State"] },
+    { "name": "Menu Item", "area": "Overlays", "axes": ["Selected", "State"] },
+    { "name": "Alert Dialog", "area": "Overlays", "axes": ["Tone", "State"] },
+    { "name": "Context Menu", "area": "Overlays", "axes": ["Density", "State"] },
+    { "name": "Drawer / Sheet", "area": "Overlays", "axes": ["Side", "Size", "State"] },
+    { "name": "Dropdown Menu", "area": "Overlays", "axes": ["Density", "State"] },
+    { "name": "Hover Card", "area": "Overlays", "axes": ["Variant", "State"] },
+    { "name": "Popover", "area": "Overlays", "axes": ["Placement", "State"] },
+    { "name": "Section Header", "area": "Documentation", "axes": ["Density"] },
+    { "name": "Type Sample", "area": "Documentation", "axes": ["Role"] },
+    { "name": "Spacing Scale Item", "area": "Documentation", "axes": ["Size"] },
+    { "name": "Radius Scale Item", "area": "Documentation", "axes": ["Radius"] },
+    { "name": "Elevation Card", "area": "Documentation", "axes": ["Level"] },
+    { "name": "Label", "area": "Documentation", "axes": ["Tone", "State"] },
+    { "name": "Kbd", "area": "Documentation", "axes": ["Variant"] }
+  ],
+  "contextual_components": {
+    "developer_tools": ["Code Block", "Command Bar", "Status Indicator", "Log Row"],
+    "media_content": ["Media Card", "Playback Control", "Content Grid", "Now Playing Bar"],
+    "dashboard_data": ["Metric Card", "Chart Container", "Filter Bar", "Data Toolbar", "Chart"],
+    "design_editor": ["Toolbar", "Inspector Panel", "Color Swatch", "Property Row", "Toggle", "Resizable"],
+    "marketing_product": ["Hero CTA Group", "Logo Marquee", "Feature Section", "Footer / Dark Section", "Aspect Ratio"],
+    "ecommerce": ["Product Card", "Price Tag", "Cart Row", "Checkout Summary", "Order Summary"],
+    "ai_chat": ["Chat Bubble", "Message Input", "Model Badge", "Thought Process", "Token Counter"],
+    "file_management": ["File Tree", "Upload Zone", "File Card", "File Preview"]
+  },
+  "source_status": ["Observed", "Inferred", "Theme-Specific"],
+  "blocks": [
+    {
+      "name": "Dashboard Shell",
+      "category": "Dashboard",
+      "description": "Sidebar + Header + Metric Cards + Charts + Data Table",
+      "requiredComponents": ["Sidebar / Rail", "Navigation Bar", "Card", "Table / Data Row"],
+      "recommendedComponents": ["Button", "Badge / Tag", "Chart", "Spinner", "Avatar"]
+    },
+    {
+      "name": "Analytics View",
+      "category": "Dashboard",
+      "description": "Chart containers + filter bar + data toolbar over a table",
+      "requiredComponents": ["Chart Container", "Filter Bar", "Data Toolbar", "Table / Data Row"],
+      "recommendedComponents": ["Card", "Segmented Control", "Calendar / Date Picker", "Button"]
+    },
+    {
+      "name": "Login Page",
+      "category": "Authentication",
+      "description": "Centered card with form fields and submit button",
+      "requiredComponents": ["Card", "Text Field", "Button", "Label"],
+      "recommendedComponents": ["Checkbox", "Link", "Divider", "Input Group"]
+    },
+    {
+      "name": "Sign Up Page",
+      "category": "Authentication",
+      "description": "Registration form with validation and OTP step",
+      "requiredComponents": ["Card", "Text Field", "Button", "Label", "Checkbox"],
+      "recommendedComponents": ["Input OTP", "Input Group", "Link", "Divider", "Toast / Notification"]
+    },
+    {
+      "name": "Password Reset",
+      "category": "Authentication",
+      "description": "Minimal form with email field and confirmation states",
+      "requiredComponents": ["Card", "Text Field", "Button", "Label"],
+      "recommendedComponents": ["Alert", "Progress / Loading", "Link"]
+    },
+    {
+      "name": "Settings Layout",
+      "category": "Settings",
+      "description": "Sidebar navigation + tabbed settings panel with form controls",
+      "requiredComponents": ["Sidebar / Rail", "Tabs", "Text Field", "Button"],
+      "recommendedComponents": ["Switch", "Select / Dropdown", "Segmented Control", "Divider", "Avatar"]
+    },
+    {
+      "name": "Notification Settings",
+      "category": "Settings",
+      "description": "List of toggle controls organized by category",
+      "requiredComponents": ["Switch", "Section Header", "Divider"],
+      "recommendedComponents": ["Radio", "Segmented Control", "Label", "Card"]
+    },
+    {
+      "name": "Mail Shell",
+      "category": "Layout Shells",
+      "description": "Three-panel layout: sidebar nav + message list + detail pane",
+      "requiredComponents": ["Sidebar / Rail", "Table / Data Row", "Panel"],
+      "recommendedComponents": ["Search Field", "Button", "Icon Button", "Badge / Tag", "Avatar", "Divider"]
+    },
+    {
+      "name": "Chat Interface",
+      "category": "Layout Shells",
+      "description": "Message list + input bar with attachment and send controls",
+      "requiredComponents": ["Chat Bubble", "Message Input", "Scroll Area"],
+      "recommendedComponents": ["Avatar", "Spinner", "Empty State", "Icon Button", "Divider"]
+    },
+    {
+      "name": "Hero Section",
+      "category": "Landing Page",
+      "description": "Full-width hero with headline, description, CTA buttons, and preview image",
+      "requiredComponents": ["Hero CTA Group", "Button", "Button Group"],
+      "recommendedComponents": ["Badge / Tag", "Carousel", "Logo Marquee"]
+    },
+    {
+      "name": "Feature Grid",
+      "category": "Landing Page",
+      "description": "Multi-column grid of feature cards with icon, title, and description",
+      "requiredComponents": ["Card", "Icon Button", "Section Header"],
+      "recommendedComponents": ["Badge / Tag", "Link"]
+    },
+    {
+      "name": "Pricing Table",
+      "category": "Landing Page",
+      "description": "Toggle between plans + side-by-side pricing cards with feature lists",
+      "requiredComponents": ["Segmented Control", "Card", "Button", "Divider"],
+      "recommendedComponents": ["Badge / Tag", "Checkbox", "Tooltip"]
+    },
+    {
+      "name": "Testimonial Carousel",
+      "category": "Landing Page",
+      "description": "Carousel of testimonial cards with avatar, quote, and attribution",
+      "requiredComponents": ["Carousel", "Card", "Avatar"],
+      "recommendedComponents": ["Badge / Tag", "Icon Button"]
+    },
+    {
+      "name": "Footer Section",
+      "category": "Landing Page",
+      "description": "Multi-column footer with nav links, social icons, and copyright",
+      "requiredComponents": ["Footer / Dark Section", "Link", "Icon Button", "Divider"],
+      "recommendedComponents": ["Badge / Tag", "Kbd"]
+    },
+    {
+      "name": "Empty State Pattern",
+      "category": "Utility",
+      "description": "Empty state illustration with message and primary action",
+      "requiredComponents": ["Empty State", "Button"],
+      "recommendedComponents": ["Link", "Icon Button"]
+    },
+    {
+      "name": "Error Page",
+      "category": "Utility",
+      "description": "Error illustration with status code, message, and return action",
+      "requiredComponents": ["Empty State", "Button"],
+      "recommendedComponents": ["Link", "Kbd"]
+    },
+    {
+      "name": "File Upload Zone",
+      "category": "Utility",
+      "description": "Drag-and-drop upload area with file list and progress",
+      "requiredComponents": ["Upload Zone", "Progress / Loading", "File Card"],
+      "recommendedComponents": ["Button", "Icon Button", "Toast / Notification", "Empty State"]
+    },
+    {
+      "name": "Onboarding Stepper",
+      "category": "Utility",
+      "description": "Multi-step form with progress indicator and navigation",
+      "requiredComponents": ["Progress / Loading", "Text Field", "Button", "Button Group"],
+      "recommendedComponents": ["Select / Dropdown", "Checkbox", "Radio", "Card", "Alert"]
+    }
+  ]
+}
