@@ -30,6 +30,14 @@ Block 的定义：
 
 其余 block 暂以 `omittedReason` 记录，保持 warning，不作为本轮 final-blocking。
 
+第二阶段继续只处理 `Figma Inspired`：
+
+- 新增依赖组件：Label、Button Group
+- 新增 block：Login Page、Password Reset、Notification Settings、Pricing Table、Error Page、Onboarding Stepper
+- `present_blocks` 从 5 扩展到 11，剩余 7 个 block 继续以 `omittedReason` 记录
+
+Blocks v3 阶段性策略：只补当前 block 必需依赖，不批量补全 54 个扩展组件。依赖组件可先作为 Blocks dependency component 存在，不改变 31 个 Tier 1 baseline required count。
+
 ## 标准 Page Sections
 
 新增 `Blocks` section，位置在 `Theme-Specific Components` 之后、`Patterns` 之前：

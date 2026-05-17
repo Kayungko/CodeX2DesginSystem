@@ -42,6 +42,7 @@ Use this skill to turn a `DESIGN.md` source into a Figma design system page. The
 - Generate every Tier 1 component from `references/component-taxonomy.md`, even if the source does not explicitly show it.
 - Generate applicable Blocks from `references/standard-component-contract.json` only in `full-blocks-v3` mode. Blocks must instance master components, never detach.
 - Track block dependencies by exact `standardName` in `blocks[].requiredComponentInstances[]`; do not treat similar display names as matches.
+- For staged Blocks v3 rollout, add only the required dependency components needed by the active block set; do not bulk-generate every extended component unless requested.
 - Mark generated components as `Observed`, `Inferred`, or `Theme-Specific` in metadata and inventory. Do not create visible `Source=*` text inside component sets or variants.
 - Build variables before components.
 - Build components before examples.

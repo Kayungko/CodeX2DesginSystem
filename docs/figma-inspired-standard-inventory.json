@@ -94,7 +94,7 @@
         "x": 0,
         "width": 2240,
         "y": 16819,
-        "height": 2600
+        "height": 3600
       },
       "standardName": "Blocks"
     },
@@ -105,7 +105,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 19659,
+        "y": 20659,
         "height": 3200
       },
       "standardName": "Patterns"
@@ -117,7 +117,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 23099,
+        "y": 24099,
         "height": 2382
       },
       "standardName": "Examples"
@@ -129,7 +129,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 25721,
+        "y": 26721,
         "height": 740
       },
       "standardName": "Reference Notes"
@@ -596,6 +596,31 @@
         "State"
       ],
       "id": null
+    },
+    {
+      "name": "Figma Inspired / Label",
+      "standardName": "Label",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 3,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": "209:74"
+    },
+    {
+      "name": "Figma Inspired / Button Group",
+      "standardName": "Button Group",
+      "section": "Core Components",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": "209:85"
     }
   ],
   "validation": {
@@ -616,380 +641,617 @@
   "contractProfile": "full-blocks-v3",
   "screenshots": [
     {
-      "purpose": "full Figma Inspired page after Blocks v3 trial",
+      "label": "Full page",
       "nodeId": "0:1",
-      "label": "Full page"
+      "purpose": "full Figma Inspired page after Blocks v3 phase 2"
     },
     {
-      "purpose": "Blocks v3 trial section visual QA",
+      "label": "Blocks",
       "nodeId": "203:34",
-      "label": "Blocks"
+      "purpose": "Blocks v3 phase 2 section visual QA"
     },
     {
-      "purpose": "Block frame visual QA",
+      "label": "Dashboard Shell",
       "nodeId": "203:39",
-      "label": "Dashboard Shell"
+      "purpose": "Block frame visual QA"
     },
     {
-      "purpose": "Block frame visual QA",
+      "label": "Settings Layout",
       "nodeId": "203:61",
-      "label": "Settings Layout"
+      "purpose": "Block frame visual QA"
     },
     {
-      "purpose": "Block frame visual QA",
+      "label": "Mail Shell",
       "nodeId": "203:75",
-      "label": "Mail Shell"
+      "purpose": "Block frame visual QA"
     },
     {
-      "purpose": "Block frame visual QA",
+      "label": "Feature Grid",
       "nodeId": "203:89",
-      "label": "Feature Grid"
+      "purpose": "Block frame visual QA"
     },
     {
-      "purpose": "Block frame visual QA",
+      "label": "Empty State Pattern",
       "nodeId": "203:119",
-      "label": "Empty State Pattern"
+      "purpose": "Block frame visual QA"
     },
     {
-      "purpose": "source-label-cleanup verification",
-      "nodeId": "169:107",
-      "label": "Table / Data Row"
+      "label": "Login Page",
+      "nodeId": "209:86",
+      "purpose": "Blocks v3 phase 2 visual QA"
     },
     {
-      "purpose": "section visual QA after cleanup",
-      "nodeId": "169:38",
-      "label": "Navigation & Layout"
+      "label": "Password Reset",
+      "nodeId": "209:106",
+      "purpose": "Blocks v3 phase 2 visual QA"
     },
     {
-      "purpose": "section visual QA after cleanup",
-      "nodeId": "169:42",
-      "label": "Feedback & Overlays"
+      "label": "Notification Settings",
+      "nodeId": "209:122",
+      "purpose": "Blocks v3 phase 2 visual QA"
+    },
+    {
+      "label": "Pricing Table",
+      "nodeId": "209:147",
+      "purpose": "Blocks v3 phase 2 visual QA"
+    },
+    {
+      "label": "Error Page",
+      "nodeId": "209:178",
+      "purpose": "Blocks v3 phase 2 visual QA"
+    },
+    {
+      "label": "Onboarding Stepper",
+      "nodeId": "209:188",
+      "purpose": "Blocks v3 phase 2 visual QA"
     }
   ],
   "blocks": [
     {
-      "bounds": {
-        "height": 411,
-        "width": 640,
-        "y": 17010,
-        "x": 80
-      },
-      "instanceCount": 5,
       "name": "Dashboard Shell",
-      "id": "203:39",
       "category": "Dashboard",
       "section": "Blocks",
+      "id": "203:39",
+      "bounds": {
+        "x": 80,
+        "y": 17010,
+        "width": 640,
+        "height": 411
+      },
+      "instanceCount": 5,
       "requiredComponentInstances": [
         {
-          "instanceId": "203:44",
           "standardName": "Navigation Bar",
+          "instanceId": "203:44",
           "mainComponentId": "169:74",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
-          "instanceId": "203:47",
           "standardName": "Sidebar / Rail",
+          "instanceId": "203:47",
           "mainComponentId": "169:79",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
+          "standardName": "Card",
           "instanceId": "203:51",
-          "standardName": "Card",
           "mainComponentId": "8:91",
           "mainComponentName": "Variant=Flat"
         },
         {
+          "standardName": "Card",
           "instanceId": "203:55",
-          "standardName": "Card",
           "mainComponentId": "8:91",
           "mainComponentName": "Variant=Flat"
         },
         {
-          "instanceId": "203:59",
           "standardName": "Table / Data Row",
+          "instanceId": "203:59",
           "mainComponentId": "169:101",
           "mainComponentName": "Variant=Default, State=Default"
         }
       ]
     },
     {
-      "bounds": {
-        "height": 271,
-        "width": 640,
-        "y": 17010,
-        "x": 748
-      },
-      "instanceCount": 4,
       "name": "Settings Layout",
-      "id": "203:61",
       "category": "Settings",
       "section": "Blocks",
+      "id": "203:61",
+      "bounds": {
+        "x": 748,
+        "y": 17010,
+        "width": 640,
+        "height": 271
+      },
+      "instanceCount": 4,
       "requiredComponentInstances": [
         {
-          "instanceId": "203:66",
           "standardName": "Sidebar / Rail",
+          "instanceId": "203:66",
           "mainComponentId": "169:79",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
-          "instanceId": "203:69",
           "standardName": "Tabs",
+          "instanceId": "203:69",
           "mainComponentId": "169:84",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
-          "instanceId": "203:71",
           "standardName": "Text Field",
+          "instanceId": "203:71",
           "mainComponentId": "8:108",
           "mainComponentName": "State=Default"
         },
         {
-          "instanceId": "203:73",
           "standardName": "Button",
+          "instanceId": "203:73",
           "mainComponentId": "20:2",
           "mainComponentName": "Size=Small, Variant=Primary, State=Default"
         }
       ]
     },
     {
-      "bounds": {
-        "height": 266,
-        "width": 640,
-        "y": 17010,
-        "x": 1416
-      },
-      "instanceCount": 4,
       "name": "Mail Shell",
-      "id": "203:75",
       "category": "Layout Shells",
       "section": "Blocks",
+      "id": "203:75",
+      "bounds": {
+        "x": 1416,
+        "y": 17010,
+        "width": 640,
+        "height": 266
+      },
+      "instanceCount": 4,
       "requiredComponentInstances": [
         {
-          "instanceId": "203:80",
           "standardName": "Sidebar / Rail",
+          "instanceId": "203:80",
           "mainComponentId": "169:79",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
+          "standardName": "Table / Data Row",
           "instanceId": "203:83",
-          "standardName": "Table / Data Row",
           "mainComponentId": "169:101",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
+          "standardName": "Table / Data Row",
           "instanceId": "203:85",
-          "standardName": "Table / Data Row",
           "mainComponentId": "169:101",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
-          "instanceId": "203:87",
           "standardName": "Panel",
+          "instanceId": "203:87",
           "mainComponentId": "169:89",
           "mainComponentName": "Variant=Default, State=Default"
         }
       ]
     },
     {
-      "bounds": {
-        "height": 481,
-        "width": 640,
-        "y": 17449,
-        "x": 80
-      },
-      "instanceCount": 7,
       "name": "Feature Grid",
-      "id": "203:89",
       "category": "Landing Page",
       "section": "Blocks",
+      "id": "203:89",
+      "bounds": {
+        "x": 80,
+        "y": 17449,
+        "width": 640,
+        "height": 481
+      },
+      "instanceCount": 7,
       "requiredComponentInstances": [
         {
-          "instanceId": "203:94",
           "standardName": "Section Header",
+          "instanceId": "203:94",
           "mainComponentId": "169:144",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
+          "standardName": "Icon Button",
           "instanceId": "203:99",
-          "standardName": "Icon Button",
           "mainComponentId": "20:75",
           "mainComponentName": "Size=Small, Variant=Solid, State=Default"
         },
         {
+          "standardName": "Card",
           "instanceId": "203:101",
-          "standardName": "Card",
           "mainComponentId": "8:91",
           "mainComponentName": "Variant=Flat"
         },
         {
+          "standardName": "Icon Button",
           "instanceId": "203:106",
-          "standardName": "Icon Button",
           "mainComponentId": "20:75",
           "mainComponentName": "Size=Small, Variant=Solid, State=Default"
         },
         {
-          "instanceId": "203:108",
           "standardName": "Card",
+          "instanceId": "203:108",
           "mainComponentId": "8:91",
           "mainComponentName": "Variant=Flat"
         },
         {
-          "instanceId": "203:113",
           "standardName": "Icon Button",
+          "instanceId": "203:113",
           "mainComponentId": "20:75",
           "mainComponentName": "Size=Small, Variant=Solid, State=Default"
         },
         {
-          "instanceId": "203:115",
           "standardName": "Card",
+          "instanceId": "203:115",
           "mainComponentId": "8:91",
           "mainComponentName": "Variant=Flat"
         }
       ]
     },
     {
-      "bounds": {
-        "height": 318,
-        "width": 640,
-        "y": 17449,
-        "x": 748
-      },
-      "instanceCount": 2,
       "name": "Empty State Pattern",
-      "id": "203:119",
       "category": "Utility",
       "section": "Blocks",
+      "id": "203:119",
+      "bounds": {
+        "x": 748,
+        "y": 17449,
+        "width": 640,
+        "height": 318
+      },
+      "instanceCount": 2,
       "requiredComponentInstances": [
         {
-          "instanceId": "203:124",
           "standardName": "Empty State",
+          "instanceId": "203:124",
           "mainComponentId": "169:123",
           "mainComponentName": "Variant=Default, State=Default"
         },
         {
-          "instanceId": "203:127",
           "standardName": "Button",
+          "instanceId": "203:127",
           "mainComponentId": "20:2",
           "mainComponentName": "Size=Small, Variant=Primary, State=Default"
         }
       ]
     },
     {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "Analytics View",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
       "name": "Login Page",
-      "id": null,
+      "category": "Authentication",
       "section": "Blocks",
-      "requiredComponentInstances": []
+      "id": "209:86",
+      "bounds": {
+        "x": 1416,
+        "y": 17449,
+        "width": 640,
+        "height": 531
+      },
+      "instanceCount": 6,
+      "requiredComponentInstances": [
+        {
+          "standardName": "Card",
+          "instanceId": "209:91",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "standardName": "Label",
+          "instanceId": "209:96",
+          "mainComponentId": "209:68",
+          "mainComponentName": "Tone=Default, State=Default"
+        },
+        {
+          "standardName": "Text Field",
+          "instanceId": "209:98",
+          "mainComponentId": "8:108",
+          "mainComponentName": "State=Default"
+        },
+        {
+          "standardName": "Label",
+          "instanceId": "209:100",
+          "mainComponentId": "209:68",
+          "mainComponentName": "Tone=Default, State=Default"
+        },
+        {
+          "standardName": "Text Field",
+          "instanceId": "209:102",
+          "mainComponentId": "8:108",
+          "mainComponentName": "State=Default"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "209:104",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        }
+      ]
     },
     {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "Sign Up Page",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
       "name": "Password Reset",
-      "id": null,
+      "category": "Authentication",
       "section": "Blocks",
-      "requiredComponentInstances": []
+      "id": "209:106",
+      "bounds": {
+        "x": 80,
+        "y": 18008,
+        "width": 640,
+        "height": 434
+      },
+      "instanceCount": 4,
+      "requiredComponentInstances": [
+        {
+          "standardName": "Card",
+          "instanceId": "209:111",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "standardName": "Label",
+          "instanceId": "209:116",
+          "mainComponentId": "209:68",
+          "mainComponentName": "Tone=Default, State=Default"
+        },
+        {
+          "standardName": "Text Field",
+          "instanceId": "209:118",
+          "mainComponentId": "8:108",
+          "mainComponentName": "State=Default"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "209:120",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        }
+      ]
     },
     {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
       "name": "Notification Settings",
-      "id": null,
+      "category": "Settings",
       "section": "Blocks",
-      "requiredComponentInstances": []
+      "id": "209:122",
+      "bounds": {
+        "x": 748,
+        "y": 18008,
+        "width": 640,
+        "height": 404
+      },
+      "instanceCount": 6,
+      "requiredComponentInstances": [
+        {
+          "standardName": "Section Header",
+          "instanceId": "209:127",
+          "mainComponentId": "169:144",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "standardName": "Switch",
+          "instanceId": "209:131",
+          "mainComponentId": "32:62",
+          "mainComponentName": "Value=Off, State=Default"
+        },
+        {
+          "standardName": "Divider",
+          "instanceId": "209:135",
+          "mainComponentId": "169:96",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "standardName": "Switch",
+          "instanceId": "209:137",
+          "mainComponentId": "32:62",
+          "mainComponentName": "Value=Off, State=Default"
+        },
+        {
+          "standardName": "Divider",
+          "instanceId": "209:141",
+          "mainComponentId": "169:96",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "standardName": "Switch",
+          "instanceId": "209:143",
+          "mainComponentId": "32:62",
+          "mainComponentName": "Value=Off, State=Default"
+        }
+      ]
     },
     {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "Chat Interface",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "Hero Section",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
       "name": "Pricing Table",
-      "id": null,
+      "category": "Landing Page",
       "section": "Blocks",
-      "requiredComponentInstances": []
+      "id": "209:147",
+      "bounds": {
+        "x": 1416,
+        "y": 18008,
+        "width": 640,
+        "height": 443
+      },
+      "instanceCount": 8,
+      "requiredComponentInstances": [
+        {
+          "standardName": "Segmented Control",
+          "instanceId": "209:152",
+          "mainComponentId": "32:118",
+          "mainComponentName": "Selected=Off, State=Default"
+        },
+        {
+          "standardName": "Card",
+          "instanceId": "209:156",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "209:160",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        },
+        {
+          "standardName": "Card",
+          "instanceId": "209:163",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "209:167",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        },
+        {
+          "standardName": "Card",
+          "instanceId": "209:170",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "209:174",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        },
+        {
+          "standardName": "Divider",
+          "instanceId": "209:176",
+          "mainComponentId": "169:96",
+          "mainComponentName": "Variant=Default, State=Default"
+        }
+      ]
     },
     {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "Testimonial Carousel",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "Footer Section",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
       "name": "Error Page",
-      "id": null,
+      "category": "Utility",
       "section": "Blocks",
-      "requiredComponentInstances": []
+      "id": "209:178",
+      "bounds": {
+        "x": 80,
+        "y": 18479,
+        "width": 640,
+        "height": 318
+      },
+      "instanceCount": 2,
+      "requiredComponentInstances": [
+        {
+          "standardName": "Empty State",
+          "instanceId": "209:183",
+          "mainComponentId": "169:123",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "209:186",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        }
+      ]
     },
     {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
-      "name": "File Upload Zone",
-      "id": null,
-      "section": "Blocks",
-      "requiredComponentInstances": []
-    },
-    {
-      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
-      "bounds": null,
-      "instanceCount": 0,
       "name": "Onboarding Stepper",
-      "id": null,
+      "category": "Utility",
       "section": "Blocks",
-      "requiredComponentInstances": []
+      "id": "209:188",
+      "bounds": {
+        "x": 748,
+        "y": 18479,
+        "width": 640,
+        "height": 275
+      },
+      "instanceCount": 5,
+      "requiredComponentInstances": [
+        {
+          "standardName": "Progress / Loading",
+          "instanceId": "209:193",
+          "mainComponentId": "169:118",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "standardName": "Text Field",
+          "instanceId": "209:195",
+          "mainComponentId": "8:108",
+          "mainComponentName": "State=Default"
+        },
+        {
+          "standardName": "Button Group",
+          "instanceId": "209:197",
+          "mainComponentId": "209:75",
+          "mainComponentName": "Variant=Default, Size=Medium, State=Default"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "I209:197;209:76",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        },
+        {
+          "standardName": "Button",
+          "instanceId": "I209:197;209:78",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        }
+      ]
+    },
+    {
+      "name": "Analytics View",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
+    },
+    {
+      "name": "Sign Up Page",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
+    },
+    {
+      "name": "Chat Interface",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
+    },
+    {
+      "name": "Hero Section",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
+    },
+    {
+      "name": "Testimonial Carousel",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
+    },
+    {
+      "name": "Footer Section",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
+    },
+    {
+      "name": "File Upload Zone",
+      "section": "Blocks",
+      "id": null,
+      "bounds": null,
+      "instanceCount": 0,
+      "requiredComponentInstances": [],
+      "omittedReason": "Out of scope for Blocks v3 phase 2; requires contextual or broader dependency components."
     }
   ]
 }

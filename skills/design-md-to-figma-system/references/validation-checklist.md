@@ -44,6 +44,7 @@ Run these checks before finalizing.
 - Every block's required components are present as master component instances; no detached local copies.
 - Inventory uses `blocks[].requiredComponentInstances[]` as the authoritative list, with exact `standardName`, `instanceId`, `mainComponentId`, and `mainComponentName`.
 - Block component matching is exact by `standardName`; `Feature Card` must not satisfy `Card`.
+- Dependency-only components such as Label or Button Group can support active blocks without increasing the 31-component baseline required count.
 - Block content is contained within its own Auto Layout frame.
 - Blocks do not appear in `Patterns` or `Examples` sections.
 - Omitted contextual blocks are documented with reasons.
@@ -54,6 +55,7 @@ Run these checks before finalizing.
 - No bounding-box overlaps inside each section, excluding intentional nested children.
 - Top-level sections have at least 240px vertical separation.
 - Section title text is not clipped.
+- Blocks use a fixed card width, wrapping grid, and enough section height for all rows.
 - `validation.sourceLabelWarnings` is empty.
 - Dense controls and overlays do not overlap product sections.
 

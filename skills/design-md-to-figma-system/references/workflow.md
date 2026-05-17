@@ -74,8 +74,10 @@ Use this sequence for every DESIGN.md to Figma system build. Do not skip inspect
 - Blocks must instance their `requiredComponents` from master component sets; never detach or copy locally.
 - Record block dependencies in inventory as `requiredComponentInstances[]` with exact `standardName`, `instanceId`, `mainComponentId`, and `mainComponentName`.
 - Required component matching for blocks is exact by `standardName`; do not accept substring or display-name matches.
-- If a block references a missing Tier 1 component, generate that component first before the block.
+- If a block references a missing required dependency, generate that dependency first before the block.
+- In staged rollouts, create only dependencies required by the selected blocks. Label and Button Group may exist as Blocks dependency components without changing the 31-component baseline.
 - Each block is a self-contained Auto Layout frame placed in the `Blocks` section.
+- Use a fixed block card width and a wrapping grid; increase the Blocks section height and move later sections instead of allowing overlap.
 - Block variants (e.g. sidebar position, density) are handled as separate block frames, not component variants.
 - Give each block a title, short description, and component count label.
 - Contextual blocks (e.g. E-commerce, AI/Chat) are optional; record which were omitted and why in `Reference Notes`.

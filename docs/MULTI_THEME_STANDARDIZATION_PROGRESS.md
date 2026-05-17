@@ -10,13 +10,13 @@ The migration preserved existing master component IDs, added missing Tier 1 stan
 
 | Page | Sections | Component Sets | Missing Required Components | Layout Warnings |
 | --- | ---: | ---: | ---: | ---: |
-| Figma Inspired | 10 | 40 | 0 | 0 |
+| Figma Inspired | 11 | 41 | 0 | 0 |
 | Spotify Inspired | 10 | 33 | 0 | 0 |
 | VoltAgent Inspired | 10 | 34 | 0 | 0 |
 
 ## Standard Sections
 
-Each page now contains:
+The `Spotify Inspired` and `VoltAgent Inspired` baseline pages contain:
 
 - Overview
 - Foundations
@@ -28,6 +28,8 @@ Each page now contains:
 - Patterns
 - Examples
 - Reference Notes
+
+`Figma Inspired` additionally contains `Blocks` between `Theme-Specific Components` and `Patterns` because it is the active `full-blocks-v3` trial page.
 
 ## Component Coverage
 
@@ -107,6 +109,25 @@ Status on 2026-05-17:
 - Recorded the remaining 13 contract blocks as omitted warnings with `omittedReason`; they are not final-blocking for this trial.
 - Hardened `validate_component_contract.py` so block dependencies use exact `standardName` from `requiredComponentInstances[]`; substring matches such as `Feature Card` -> `Card` are rejected.
 
+## Blocks v3 Phase 2
+
+Status on 2026-05-17:
+
+- Continued only on `Figma Inspired`; `Spotify Inspired` and `VoltAgent Inspired` remain on `tier1-31-no-blocks`.
+- Added dependency component sets:
+  - `Figma Inspired / Label`: `209:74`
+  - `Figma Inspired / Button Group`: `209:85`
+- Added 6 more block frames:
+  - Login Page: `209:86`
+  - Password Reset: `209:106`
+  - Notification Settings: `209:122`
+  - Pricing Table: `209:147`
+  - Error Page: `209:178`
+  - Onboarding Stepper: `209:188`
+- Blocks section height expanded from 2600 to 3600; `Patterns`, `Examples`, and `Reference Notes` moved down by 1000px.
+- Verified via read-only Figma scan: 11 present blocks, section overlaps `[]`, `sourceLabelWarnings=[]`, `instanceDetachWarnings=[]`.
+- Remaining omitted blocks reduced from 13 to 7. They require contextual/broader dependencies and stay warnings, not final-blocking.
+
 ## Validation Commands
 
 ```powershell
@@ -118,7 +139,7 @@ python skills/design-md-to-figma-system/scripts/validate_component_contract.py d
 
 Latest local results:
 
-- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `present_blocks=5`, `omitted_blocks=13`.
+- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `present_blocks=11`, `omitted_blocks=7`.
 - Spotify Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
 - VoltAgent Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
 
@@ -150,3 +171,9 @@ Additional Blocks v3 QA targets:
 - `Mail Shell`: `203:75`
 - `Feature Grid`: `203:89`
 - `Empty State Pattern`: `203:119`
+- `Login Page`: `209:86`
+- `Password Reset`: `209:106`
+- `Notification Settings`: `209:122`
+- `Pricing Table`: `209:147`
+- `Error Page`: `209:178`
+- `Onboarding Stepper`: `209:188`
