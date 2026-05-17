@@ -13,6 +13,7 @@
 - `docs/SPOTIFY_INSPIRED_FORWARD_TEST.md`：Spotify DESIGN.md 写入 Figma 的 skill 前向测试记录。
 - `docs/VOLTAGENT_INSPIRED_FORWARD_TEST.md`：VoltAgent DESIGN.md 写入 Figma 的 skill 前向测试记录。
 - `docs/COMPONENT_STANDARDIZATION_PLAN.md`：多主题设计系统组件覆盖统一方案。
+- `docs/NEXT_HANDOFF_PLAN.md`：新电脑或新 Codex 接手时的当前状态、下一步计划与验证入口。
 - `docs/MULTI_THEME_STANDARDIZATION_PROGRESS.md`：三套现有主题补齐标准组件后的迁移进度与验证记录。
 - `docs/*-standard-inventory.json`：三套主题的 v2 Figma inventory，本地用于 contract 验收。
 

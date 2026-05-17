@@ -6,6 +6,8 @@ Completed incremental standardization for the existing `Figma Inspired`, `Spotif
 
 The migration preserved existing master component IDs, added missing Tier 1 standard components, moved theme-specific components into dedicated sections, removed empty legacy `Editor Controls` sections, and adopted page background colors instead of filling structural section frames.
 
+For a fresh-machine or new-Codex handoff, start with `docs/NEXT_HANDOFF_PLAN.md`.
+
 ## Page Results
 
 | Page | Sections | Component Sets | Missing Required Components | Layout Warnings |
