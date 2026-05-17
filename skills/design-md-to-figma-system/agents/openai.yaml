@@ -1,0 +1,4 @@
+interface:
+  display_name: "DESIGN.md to Figma System"
+  short_description: "Generate Figma design systems from DESIGN.md sources."
+  default_prompt: "Use this skill to turn a DESIGN.md style source into a complete single-page Figma design system."
