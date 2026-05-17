@@ -13,11 +13,11 @@ Use this reference after the read-only Figma inspection phase and again before f
 Write the result as JSON with:
 
 - `schemaVersion`: `design-md-system-inventory/v2`
-- `contractProfile`: `tier1-31-no-blocks` for the current 31-component baseline, or omit/use `full` after Blocks v3 is implemented.
+- `contractProfile`: `tier1-31-no-blocks` for the current 31-component baseline, or `full-blocks-v3` for the 31-component baseline plus Blocks v3 validation.
 - `styleName`, `fileKey`, `pageId`, `pageName`
 - `sections[]`: `name`, `standardName`, `index`, `id`, `bounds`
 - `componentSets[]`: `name`, `standardName`, `section`, `sourceStatus`, `variantCount`, `variantProperties`, `id`
-- `blocks[]`: `name`, `category`, `section`, `id`, `instanceCount`, `requiredComponents`, `omittedReason`
+- `blocks[]`: `name`, `category`, `section`, `id`, `bounds`, `instanceCount`, `requiredComponentInstances`, `omittedReason`
 - `validation`: `overlaps`, `overWidth`, `structuralFrameFills`, `sourceLabelWarnings`, `menuAlignmentWarnings`, `instanceDetachWarnings`, `bindingSummary`, plus optional `hardcodedFillWarnings`, `bindingWarnings`, `screenshotWarnings`
 - `screenshots[]`: label and node ID for each captured area
 
@@ -25,12 +25,15 @@ Write the result as JSON with:
 
 Source status must be metadata. `Source=Observed`, `Source=Inferred`, or `Source=Theme-Specific` text inside a component set or variant is a blocking `sourceLabelWarnings` item.
 
+For Blocks v3, `requiredComponentInstances[]` is the authoritative dependency list. Each item must include `standardName`, `instanceId`, `mainComponentId`, and `mainComponentName`. Do not use substring or display-name matching: `Feature Card` does not satisfy `Card`, and `Navigation Bar Copy` does not satisfy `Navigation Bar`.
+
 ## Read-Only `use_figma` Template
 
 Load `figma-use` first, then run a read-only script shaped like this:
 
 ```js
 const STYLE_NAME = "Spotify Inspired";
+const SHARED_DATA_NS = "design_md_system";
 const STANDARD_SECTIONS = [
   "Overview",
   "Foundations",
@@ -212,18 +215,24 @@ const blockFrames = blocksSection
   : [];
 
 const blocks = blockFrames.map((frame) => ({
-  name: frame.name,
-  category: (frame.description || "").match(/Category=(\w[\w\s]*)/)?.[1] || null,
+  name: stripStylePrefix(frame.name),
+  category: frame.getSharedPluginData(SHARED_DATA_NS, "category") || null,
   section: "Blocks",
   id: frame.id,
+  bounds: bounds(frame),
   instanceCount: frame.findAll((node) => node.type === "INSTANCE").length,
-  requiredComponents: frame.findAll((node) => node.type === "INSTANCE").map((inst) => inst.name),
-  omittedReason: (frame.description || "").match(/Omitted=(.+)/)?.[1] || null,
+  requiredComponentInstances: frame.findAll((node) => node.type === "INSTANCE").map((inst) => ({
+    standardName: inst.getSharedPluginData(SHARED_DATA_NS, "standardName") || standardComponentName(inst.mainComponent?.name || inst.name),
+    instanceId: inst.id,
+    mainComponentId: inst.mainComponent?.id || null,
+    mainComponentName: inst.mainComponent?.name || null,
+  })),
+  omittedReason: frame.getSharedPluginData(SHARED_DATA_NS, "omittedReason") || null,
 }));
 
 return {
   schemaVersion: "design-md-system-inventory/v2",
-  contractProfile: "tier1-31-no-blocks",
+  contractProfile: blocks.length ? "full-blocks-v3" : "tier1-31-no-blocks",
   styleName: STYLE_NAME,
   pageId: page.id,
   pageName: page.name,

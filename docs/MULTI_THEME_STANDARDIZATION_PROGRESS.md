@@ -90,17 +90,35 @@ Status on 2026-05-17:
 - Verified by read-only scan that all three pages now have `totalSourceTexts=0` and `insideCount=0`.
 - Verified `Figma Inspired / Table / Data Row` now has only the visible row title in each variant; `Source=Inferred` remains in component and variant descriptions.
 
+## Blocks v3 Trial
+
+Status on 2026-05-17:
+
+- Enabled `contractProfile=full-blocks-v3` for `Figma Inspired` only. `Spotify Inspired` and `VoltAgent Inspired` remain on `tier1-31-no-blocks`.
+- Inserted `Figma Inspired / Blocks` between `Theme-Specific Components` and `Patterns`; moved `Patterns`, `Examples`, and `Reference Notes` down by 2840px.
+- Structural section frame has no fill; block cards use content surface styling only.
+- Created 5 trial blocks from existing master component instances:
+  - Dashboard Shell: `203:39`
+  - Settings Layout: `203:61`
+  - Mail Shell: `203:75`
+  - Feature Grid: `203:89`
+  - Empty State Pattern: `203:119`
+- Verified via read-only Figma scan: section overlaps `[]`, `sourceLabelWarnings=[]`, `instanceDetachWarnings=[]`.
+- Recorded the remaining 13 contract blocks as omitted warnings with `omittedReason`; they are not final-blocking for this trial.
+- Hardened `validate_component_contract.py` so block dependencies use exact `standardName` from `requiredComponentInstances[]`; substring matches such as `Feature Card` -> `Card` are rejected.
+
 ## Validation Commands
 
 ```powershell
 python skills/design-md-to-figma-system/scripts/validate_component_contract.py docs/figma-inspired-standard-inventory.json
+python skills/design-md-to-figma-system/scripts/validate_component_contract.py docs/figma-inspired-standard-inventory.json --profile full-blocks-v3
 python skills/design-md-to-figma-system/scripts/validate_component_contract.py docs/spotify-inspired-standard-inventory.json
 python skills/design-md-to-figma-system/scripts/validate_component_contract.py docs/voltagent-inspired-standard-inventory.json
 ```
 
 Latest local results:
 
-- Figma Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
+- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `present_blocks=5`, `omitted_blocks=13`.
 - Spotify Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
 - VoltAgent Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
 
@@ -123,3 +141,12 @@ Additional source-label cleanup QA targets:
 - `Table / Data Row`: `169:107`
 - `Navigation & Layout`: `169:38`
 - `Feedback & Overlays`: `169:42`
+
+Additional Blocks v3 QA targets:
+
+- `Blocks`: `203:34`
+- `Dashboard Shell`: `203:39`
+- `Settings Layout`: `203:61`
+- `Mail Shell`: `203:75`
+- `Feature Grid`: `203:89`
+- `Empty State Pattern`: `203:119`

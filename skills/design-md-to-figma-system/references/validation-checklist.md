@@ -5,7 +5,7 @@ Run these checks before finalizing.
 ## Figma Structure
 
 - Export `design-md-system-inventory/v2` using `references/figma-inventory-export.md`.
-- Current baseline inventories declare `contractProfile=tier1-31-no-blocks`; full Blocks v3 inventories may omit this or use `full`.
+- Current baseline inventories declare `contractProfile=tier1-31-no-blocks`; Blocks v3 inventories declare `contractProfile=full-blocks-v3` and validate the 31-component baseline plus Blocks.
 - Target style exists as exactly one page.
 - Expected sections exist in order.
 - Current baseline builds use: Overview, Foundations, Core Components, Form & Input Controls, Navigation & Layout, Feedback & Overlays, Theme-Specific Components, Patterns, Examples, Reference Notes.
@@ -39,9 +39,11 @@ Run these checks before finalizing.
 ## Blocks
 
 - Skip this section for `contractProfile=tier1-31-no-blocks`.
-- For full Blocks v3, all required blocks from `standard-component-contract.json` exist in the `Blocks` section.
+- For `full-blocks-v3`, all required blocks from `standard-component-contract.json` are either present in the `Blocks` section or explicitly omitted with a reason.
 - Missing blocks are final-blocking unless the category is out of scope for the product type (record the reason in `Reference Notes`).
-- Every block's `requiredComponents` are present as master component instances; no detached local copies.
+- Every block's required components are present as master component instances; no detached local copies.
+- Inventory uses `blocks[].requiredComponentInstances[]` as the authoritative list, with exact `standardName`, `instanceId`, `mainComponentId`, and `mainComponentName`.
+- Block component matching is exact by `standardName`; `Feature Card` must not satisfy `Card`.
 - Block content is contained within its own Auto Layout frame.
 - Blocks do not appear in `Patterns` or `Examples` sections.
 - Omitted contextual blocks are documented with reasons.

@@ -48,7 +48,7 @@ Use this sequence for every DESIGN.md to Figma system build. Do not skip inspect
   - Patterns
   - Examples
   - Reference Notes
-- Use the additional `Blocks` section only when implementing the full Blocks v3 contract.
+- Use the additional `Blocks` section only when implementing `contractProfile=full-blocks-v3`.
 - Keep at least 240px between top-level sections.
 - Prefer Figma Section nodes if they are reliable; otherwise use named frames.
 - Give each section a title, short description, and content count.
@@ -69,9 +69,11 @@ Use this sequence for every DESIGN.md to Figma system build. Do not skip inspect
 ## 6. Block Generation
 
 - Skip this phase for `contractProfile=tier1-31-no-blocks`.
-- Generate blocks after master components are complete and before free-form patterns when using the full Blocks v3 contract.
+- Generate blocks after master components are complete and before free-form patterns when using `contractProfile=full-blocks-v3`.
 - Read the `blocks` section of `references/standard-component-contract.json` to scope which blocks to generate for the target product category.
 - Blocks must instance their `requiredComponents` from master component sets; never detach or copy locally.
+- Record block dependencies in inventory as `requiredComponentInstances[]` with exact `standardName`, `instanceId`, `mainComponentId`, and `mainComponentName`.
+- Required component matching for blocks is exact by `standardName`; do not accept substring or display-name matches.
 - If a block references a missing Tier 1 component, generate that component first before the block.
 - Each block is a self-contained Auto Layout frame placed in the `Blocks` section.
 - Block variants (e.g. sidebar position, density) are handled as separate block frames, not component variants.
@@ -93,7 +95,7 @@ Use this sequence for every DESIGN.md to Figma system build. Do not skip inspect
 - Final delivery is blocked when `finalBlocking` is not empty.
 - Final v2 inventories should have empty `schemaWarnings`; legacy inventories may warn only during migration.
 - Report `Observed`, `Inferred`, and `Theme-Specific` component counts.
-- Report Block coverage only when using the full Blocks v3 contract.
+- Report Block coverage only when using `contractProfile=full-blocks-v3`.
 - Screenshot Foundations, Core Components, Form & Input Controls, Navigation & Layout, Feedback & Overlays, Theme-Specific Components, Patterns, and Examples; include Blocks only when that section exists.
 - Check overlap before finalizing.
 - Update product docs and progress docs with exact counts and validation results.

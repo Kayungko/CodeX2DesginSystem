@@ -38,13 +38,14 @@ Use this skill to turn a `DESIGN.md` source into a Figma design system page. The
   - `Style Name / Patterns`
   - `Style Name / Examples`
   - `Style Name / Reference Notes`
-- Add `Style Name / Blocks` only when the full Blocks v3 contract is active.
+- Add `Style Name / Blocks` only when `contractProfile=full-blocks-v3` is active.
 - Generate every Tier 1 component from `references/component-taxonomy.md`, even if the source does not explicitly show it.
-- Generate applicable Blocks from `references/standard-component-contract.json` only in full Blocks v3 mode. Blocks must instance master components, never detach.
+- Generate applicable Blocks from `references/standard-component-contract.json` only in `full-blocks-v3` mode. Blocks must instance master components, never detach.
+- Track block dependencies by exact `standardName` in `blocks[].requiredComponentInstances[]`; do not treat similar display names as matches.
 - Mark generated components as `Observed`, `Inferred`, or `Theme-Specific` in metadata and inventory. Do not create visible `Source=*` text inside component sets or variants.
 - Build variables before components.
 - Build components before examples.
-- In full Blocks v3 mode, build blocks after components and before examples.
+- In `full-blocks-v3` mode, build blocks after components and before examples.
 - Move existing master components when restructuring; do not duplicate them unless the user asks for a fork.
 - Update product and progress docs at the end of every generation or migration task.
 

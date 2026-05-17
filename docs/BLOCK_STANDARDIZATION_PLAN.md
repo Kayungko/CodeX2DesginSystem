@@ -8,13 +8,27 @@ shadcn/ui 除了 56 个核心组件外，官方维护了 50+ 个 **blocks**（�
 
 ## 决策
 
-从当前版本开始，skill 在 Tier 1/2/3 组件之上新增 **Tier 4: Blocks & Compositions** 层。
+从当前版本开始，skill 在 Tier 1/2/3 组件之上新增 **Tier 4: Blocks & Compositions** 层。正式 profile 名称为 `full-blocks-v3`，含义是“31 个 Tier 1 基线组件 + Blocks v3 验证层”；现有无 Blocks 基线继续使用 `tier1-31-no-blocks`。
 
 Block 的定义：
 - Block 是一个自包含的 Auto Layout frame，放在 `Blocks` section 中
 - Block 必须实例化其 `requiredComponents` 从 master component 集，不 detach
+- Block inventory 必须记录 `requiredComponentInstances[]`，每项包含 `standardName`、`instanceId`、`mainComponentId`、`mainComponentName`
+- Block 依赖只按 `standardName` 精确匹配，禁止使用 substring/includes；例如 `Feature Card` 不等于 `Card`
 - Block 是组件库的"验证层"：证明 Tier 1 组件能协同工作
 - Block 不同于 Patterns（自由组合），Block 遵循契约中定义的组合结构
+
+## Figma Inspired 试点范围
+
+第一轮只在 `Figma Inspired` 页面启用 `full-blocks-v3`，并生成 5 个低风险 block：
+
+- Dashboard Shell
+- Settings Layout
+- Mail Shell
+- Feature Grid
+- Empty State Pattern
+
+其余 block 暂以 `omittedReason` 记录，保持 warning，不作为本轮 final-blocking。
 
 ## 标准 Page Sections
 
@@ -95,12 +109,13 @@ Block 的定义：
 ## 验证
 
 ```powershell
-python skills/design-md-to-figma-system/scripts/validate_component_contract.py docs/<style>-standard-inventory.json
+python skills/design-md-to-figma-system/scripts/validate_component_contract.py docs/<style>-standard-inventory.json --profile full-blocks-v3
 ```
 
 - `missing_blocks`：block 不在 inventory 中 → warning
 - `omitted_blocks`：block 存在但有 `omittedReason` → warning
-- block `requiredComponent` 实例缺失 → finalBlocking
+- block `requiredComponentInstances` 精确 standardName 缺失 → finalBlocking
+- block instance 缺少 `mainComponentId` / `mainComponentName` → finalBlocking
 - block `instanceCount` 为 0 → finalBlocking
 - block 不在 `Blocks` section 中 → finalBlocking
 

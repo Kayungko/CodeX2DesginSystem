@@ -3,74 +3,136 @@
   "styleName": "Figma Inspired",
   "sections": [
     {
-      "name": "Figma Inspired / Overview",
-      "standardName": "Overview",
+      "id": "40:2",
       "index": 0,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Overview",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 0,
+        "height": 1200
+      },
+      "standardName": "Overview"
     },
     {
-      "name": "Figma Inspired / Foundations",
-      "standardName": "Foundations",
+      "id": "40:8",
       "index": 1,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Foundations",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 1440,
+        "height": 1499
+      },
+      "standardName": "Foundations"
     },
     {
-      "name": "Figma Inspired / Core Components",
-      "standardName": "Core Components",
+      "id": "40:14",
       "index": 2,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Core Components",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 3179,
+        "height": 4220
+      },
+      "standardName": "Core Components"
     },
     {
-      "name": "Figma Inspired / Form & Input Controls",
-      "standardName": "Form & Input Controls",
+      "id": "169:34",
       "index": 3,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Form & Input Controls",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 7639,
+        "height": 2886
+      },
+      "standardName": "Form & Input Controls"
     },
     {
-      "name": "Figma Inspired / Navigation & Layout",
-      "standardName": "Navigation & Layout",
+      "id": "169:38",
       "index": 4,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Navigation & Layout",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 10765,
+        "height": 2436
+      },
+      "standardName": "Navigation & Layout"
     },
     {
-      "name": "Figma Inspired / Feedback & Overlays",
-      "standardName": "Feedback & Overlays",
+      "id": "169:42",
       "index": 5,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Feedback & Overlays",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 13441,
+        "height": 1870
+      },
+      "standardName": "Feedback & Overlays"
     },
     {
-      "name": "Figma Inspired / Theme-Specific Components",
-      "standardName": "Theme-Specific Components",
+      "id": "169:46",
       "index": 6,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Theme-Specific Components",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 15551,
+        "height": 1028
+      },
+      "standardName": "Theme-Specific Components"
     },
     {
-      "name": "Figma Inspired / Patterns",
-      "standardName": "Patterns",
+      "id": "203:34",
       "index": 7,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Blocks",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 16819,
+        "height": 2600
+      },
+      "standardName": "Blocks"
     },
     {
-      "name": "Figma Inspired / Examples",
-      "standardName": "Examples",
+      "id": "40:26",
       "index": 8,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Patterns",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 19659,
+        "height": 3200
+      },
+      "standardName": "Patterns"
     },
     {
-      "name": "Figma Inspired / Reference Notes",
-      "standardName": "Reference Notes",
+      "id": "40:32",
       "index": 9,
-      "id": null,
-      "bounds": null
+      "name": "Figma Inspired / Examples",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 23099,
+        "height": 2382
+      },
+      "standardName": "Examples"
+    },
+    {
+      "id": "40:38",
+      "index": 10,
+      "name": "Figma Inspired / Reference Notes",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 25721,
+        "height": 740
+      },
+      "standardName": "Reference Notes"
     }
   ],
   "componentSets": [
@@ -546,24 +608,388 @@
       "boundVisualNodeCount": null,
       "hardcodedFillWarnings": []
     },
-    "sourceLabelWarnings": []
+    "sourceLabelWarnings": [],
+    "hardcodedFillWarnings": [],
+    "bindingWarnings": [],
+    "screenshotWarnings": []
   },
-  "contractProfile": "tier1-31-no-blocks",
+  "contractProfile": "full-blocks-v3",
   "screenshots": [
     {
-      "label": "Table / Data Row",
+      "purpose": "full Figma Inspired page after Blocks v3 trial",
+      "nodeId": "0:1",
+      "label": "Full page"
+    },
+    {
+      "purpose": "Blocks v3 trial section visual QA",
+      "nodeId": "203:34",
+      "label": "Blocks"
+    },
+    {
+      "purpose": "Block frame visual QA",
+      "nodeId": "203:39",
+      "label": "Dashboard Shell"
+    },
+    {
+      "purpose": "Block frame visual QA",
+      "nodeId": "203:61",
+      "label": "Settings Layout"
+    },
+    {
+      "purpose": "Block frame visual QA",
+      "nodeId": "203:75",
+      "label": "Mail Shell"
+    },
+    {
+      "purpose": "Block frame visual QA",
+      "nodeId": "203:89",
+      "label": "Feature Grid"
+    },
+    {
+      "purpose": "Block frame visual QA",
+      "nodeId": "203:119",
+      "label": "Empty State Pattern"
+    },
+    {
+      "purpose": "source-label-cleanup verification",
       "nodeId": "169:107",
-      "purpose": "source-label-cleanup verification"
+      "label": "Table / Data Row"
     },
     {
-      "label": "Navigation & Layout",
+      "purpose": "section visual QA after cleanup",
       "nodeId": "169:38",
-      "purpose": "section visual QA after cleanup"
+      "label": "Navigation & Layout"
     },
     {
-      "label": "Feedback & Overlays",
+      "purpose": "section visual QA after cleanup",
       "nodeId": "169:42",
-      "purpose": "section visual QA after cleanup"
+      "label": "Feedback & Overlays"
+    }
+  ],
+  "blocks": [
+    {
+      "bounds": {
+        "height": 411,
+        "width": 640,
+        "y": 17010,
+        "x": 80
+      },
+      "instanceCount": 5,
+      "name": "Dashboard Shell",
+      "id": "203:39",
+      "category": "Dashboard",
+      "section": "Blocks",
+      "requiredComponentInstances": [
+        {
+          "instanceId": "203:44",
+          "standardName": "Navigation Bar",
+          "mainComponentId": "169:74",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:47",
+          "standardName": "Sidebar / Rail",
+          "mainComponentId": "169:79",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:51",
+          "standardName": "Card",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "instanceId": "203:55",
+          "standardName": "Card",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "instanceId": "203:59",
+          "standardName": "Table / Data Row",
+          "mainComponentId": "169:101",
+          "mainComponentName": "Variant=Default, State=Default"
+        }
+      ]
+    },
+    {
+      "bounds": {
+        "height": 271,
+        "width": 640,
+        "y": 17010,
+        "x": 748
+      },
+      "instanceCount": 4,
+      "name": "Settings Layout",
+      "id": "203:61",
+      "category": "Settings",
+      "section": "Blocks",
+      "requiredComponentInstances": [
+        {
+          "instanceId": "203:66",
+          "standardName": "Sidebar / Rail",
+          "mainComponentId": "169:79",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:69",
+          "standardName": "Tabs",
+          "mainComponentId": "169:84",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:71",
+          "standardName": "Text Field",
+          "mainComponentId": "8:108",
+          "mainComponentName": "State=Default"
+        },
+        {
+          "instanceId": "203:73",
+          "standardName": "Button",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        }
+      ]
+    },
+    {
+      "bounds": {
+        "height": 266,
+        "width": 640,
+        "y": 17010,
+        "x": 1416
+      },
+      "instanceCount": 4,
+      "name": "Mail Shell",
+      "id": "203:75",
+      "category": "Layout Shells",
+      "section": "Blocks",
+      "requiredComponentInstances": [
+        {
+          "instanceId": "203:80",
+          "standardName": "Sidebar / Rail",
+          "mainComponentId": "169:79",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:83",
+          "standardName": "Table / Data Row",
+          "mainComponentId": "169:101",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:85",
+          "standardName": "Table / Data Row",
+          "mainComponentId": "169:101",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:87",
+          "standardName": "Panel",
+          "mainComponentId": "169:89",
+          "mainComponentName": "Variant=Default, State=Default"
+        }
+      ]
+    },
+    {
+      "bounds": {
+        "height": 481,
+        "width": 640,
+        "y": 17449,
+        "x": 80
+      },
+      "instanceCount": 7,
+      "name": "Feature Grid",
+      "id": "203:89",
+      "category": "Landing Page",
+      "section": "Blocks",
+      "requiredComponentInstances": [
+        {
+          "instanceId": "203:94",
+          "standardName": "Section Header",
+          "mainComponentId": "169:144",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:99",
+          "standardName": "Icon Button",
+          "mainComponentId": "20:75",
+          "mainComponentName": "Size=Small, Variant=Solid, State=Default"
+        },
+        {
+          "instanceId": "203:101",
+          "standardName": "Card",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "instanceId": "203:106",
+          "standardName": "Icon Button",
+          "mainComponentId": "20:75",
+          "mainComponentName": "Size=Small, Variant=Solid, State=Default"
+        },
+        {
+          "instanceId": "203:108",
+          "standardName": "Card",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        },
+        {
+          "instanceId": "203:113",
+          "standardName": "Icon Button",
+          "mainComponentId": "20:75",
+          "mainComponentName": "Size=Small, Variant=Solid, State=Default"
+        },
+        {
+          "instanceId": "203:115",
+          "standardName": "Card",
+          "mainComponentId": "8:91",
+          "mainComponentName": "Variant=Flat"
+        }
+      ]
+    },
+    {
+      "bounds": {
+        "height": 318,
+        "width": 640,
+        "y": 17449,
+        "x": 748
+      },
+      "instanceCount": 2,
+      "name": "Empty State Pattern",
+      "id": "203:119",
+      "category": "Utility",
+      "section": "Blocks",
+      "requiredComponentInstances": [
+        {
+          "instanceId": "203:124",
+          "standardName": "Empty State",
+          "mainComponentId": "169:123",
+          "mainComponentName": "Variant=Default, State=Default"
+        },
+        {
+          "instanceId": "203:127",
+          "standardName": "Button",
+          "mainComponentId": "20:2",
+          "mainComponentName": "Size=Small, Variant=Primary, State=Default"
+        }
+      ]
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Analytics View",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Login Page",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Sign Up Page",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Password Reset",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Notification Settings",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Chat Interface",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Hero Section",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Pricing Table",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Testimonial Carousel",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Footer Section",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Error Page",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "File Upload Zone",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
+    },
+    {
+      "omittedReason": "Out of scope for first Figma Inspired Blocks v3 trial; generate after contract/schema baseline stabilizes.",
+      "bounds": null,
+      "instanceCount": 0,
+      "name": "Onboarding Stepper",
+      "id": null,
+      "section": "Blocks",
+      "requiredComponentInstances": []
     }
   ]
 }

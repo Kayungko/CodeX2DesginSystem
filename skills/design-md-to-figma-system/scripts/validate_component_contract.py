@@ -49,6 +49,8 @@ DEFAULT_CONTRACT = (
 )
 SCHEMA_VERSION = "design-md-system-inventory/v2"
 BASELINE_31_PROFILE = "tier1-31-no-blocks"
+FULL_BLOCKS_PROFILE = "full-blocks-v3"
+LEGACY_FULL_PROFILE = "full"
 BASELINE_31_SECTIONS = [
     "Overview",
     "Foundations",
@@ -185,6 +187,40 @@ def list_names(items: list[dict[str, Any]]) -> list[str]:
     return [str(item.get("name", "")) for item in items if isinstance(item, dict)]
 
 
+def block_instance_standard_names(
+    block: dict[str, Any], schema_warnings: list[str]
+) -> tuple[set[str], list[dict[str, Any]]]:
+    """Return exact standard names for component instances used by a block."""
+
+    instances = block.get("requiredComponentInstances")
+    if isinstance(instances, list):
+        names: set[str] = set()
+        normalized_instances: list[dict[str, Any]] = []
+        for item in instances:
+            if not isinstance(item, dict):
+                schema_warnings.append(
+                    f"block '{block.get('name', '')}' has a non-object requiredComponentInstances item"
+                )
+                continue
+            standard_name = item.get("standardName")
+            if standard_name:
+                names.add(standard_name)
+            normalized_instances.append(item)
+        return names, normalized_instances
+
+    legacy = block.get("requiredComponents", [])
+    if isinstance(legacy, list):
+        schema_warnings.append(
+            f"block '{block.get('name', '')}' uses legacy requiredComponents; prefer requiredComponentInstances"
+        )
+        return {item for item in legacy if isinstance(item, str)}, []
+
+    schema_warnings.append(
+        f"block '{block.get('name', '')}' missing requiredComponentInstances"
+    )
+    return set(), []
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Validate Figma inventory against the DESIGN.md standard component contract."
@@ -196,12 +232,21 @@ def main() -> int:
         default=DEFAULT_CONTRACT,
         help=f"Path to component contract JSON. Defaults to {DEFAULT_CONTRACT}",
     )
+    parser.add_argument(
+        "--profile",
+        choices=[BASELINE_31_PROFILE, FULL_BLOCKS_PROFILE, LEGACY_FULL_PROFILE],
+        help="Override inventory.contractProfile for validation.",
+    )
     args = parser.parse_args()
 
     contract = load_json(args.contract)
     inventory = load_json(args.inventory)
 
-    contract_profile = inventory.get("contractProfile", "full")
+    schema_warnings: list[str] = []
+    final_blocking: list[str] = []
+    warnings: list[str] = []
+
+    contract_profile = args.profile or inventory.get("contractProfile", FULL_BLOCKS_PROFILE)
     if contract_profile == BASELINE_31_PROFILE:
         required_sections = BASELINE_31_SECTIONS
         required_components = [
@@ -209,16 +254,26 @@ def main() -> int:
             if item["name"] in BASELINE_31_COMPONENTS
         ]
         required_blocks = []
+    elif contract_profile == FULL_BLOCKS_PROFILE:
+        required_sections = contract["required_sections"]
+        required_components = [
+            item for item in contract["required_components"]
+            if item["name"] in BASELINE_31_COMPONENTS
+        ]
+        required_blocks = contract.get("blocks", [])
+    elif contract_profile == LEGACY_FULL_PROFILE:
+        required_sections = contract["required_sections"]
+        required_components = contract["required_components"]
+        required_blocks = contract.get("blocks", [])
     else:
         required_sections = contract["required_sections"]
         required_components = contract["required_components"]
         required_blocks = contract.get("blocks", [])
+        schema_warnings.append(
+            f"unknown contractProfile '{contract_profile}', validating as '{FULL_BLOCKS_PROFILE}'"
+        )
     required_component_names = [item["name"] for item in required_components]
     allowed_statuses = set(contract.get("source_status", []))
-
-    schema_warnings: list[str] = []
-    final_blocking: list[str] = []
-    warnings: list[str] = []
 
     # ----- blocks -----
     required_block_names = [item["name"] for item in required_blocks]
@@ -258,15 +313,23 @@ def main() -> int:
             final_blocking.append(f"block '{name}' must be placed in 'Blocks' section, got '{block.get('section')}'")
 
         required_children = contract_block.get("requiredComponents", [])
-        block_present = set(block.get("requiredComponents", []))
+        block_present, block_instances = block_instance_standard_names(block, schema_warnings)
         missing_children = [
             child for child in required_children
-            if not any(child in bp or bp in child for bp in block_present)
+            if child not in block_present
         ]
         if missing_children:
             final_blocking.append(
                 f"block '{name}' missing required component instances: {', '.join(missing_children)}"
             )
+
+        for instance in block_instances:
+            standard_name = instance.get("standardName") or "<missing standardName>"
+            for field in ["standardName", "instanceId", "mainComponentId", "mainComponentName"]:
+                if not instance.get(field):
+                    final_blocking.append(
+                        f"block '{name}' instance for '{standard_name}' missing {field}"
+                    )
 
         instance_count = block.get("instanceCount")
         if instance_count is None:

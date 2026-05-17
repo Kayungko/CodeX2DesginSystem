@@ -68,6 +68,7 @@ def full_inventory() -> dict:
             "instanceDetachWarnings": [],
             "bindingSummary": {},
         },
+        "contractProfile": "full-blocks-v3",
         "blocks": [
             {
                 "name": block["name"],
@@ -75,7 +76,15 @@ def full_inventory() -> dict:
                 "section": "Blocks",
                 "id": f"block-{index}",
                 "instanceCount": 1,
-                "requiredComponents": block.get("requiredComponents", []),
+                "requiredComponentInstances": [
+                    {
+                        "standardName": component_name,
+                        "instanceId": f"block-{index}-instance-{component_index}",
+                        "mainComponentId": f"component-main-{component_index}",
+                        "mainComponentName": component_name,
+                    }
+                    for component_index, component_name in enumerate(block.get("requiredComponents", []))
+                ],
             }
             for index, block in enumerate(contract.get("blocks", []))
         ],
@@ -148,11 +157,56 @@ def test_section_order_and_duplicate_fail() -> None:
 def test_block_missing_required_components_fails() -> None:
     inventory = full_inventory()
     if inventory["blocks"]:
-        inventory["blocks"][0]["requiredComponents"] = []
+        inventory["blocks"][0]["requiredComponentInstances"] = []
     code, result = run_validator(inventory)
     if inventory["blocks"]:
         assert code == 1
         assert any("missing required component instances" in item for item in result["finalBlocking"])
+
+
+def test_block_required_components_are_exact() -> None:
+    inventory = full_inventory()
+    if inventory["blocks"]:
+        inventory["blocks"][0]["requiredComponentInstances"] = [
+            {
+                "standardName": "Sidebar / Rail Item",
+                "instanceId": "bad-1",
+                "mainComponentId": "bad-main-1",
+                "mainComponentName": "Sidebar / Rail Item",
+            },
+            {
+                "standardName": "Navigation Bar Copy",
+                "instanceId": "bad-2",
+                "mainComponentId": "bad-main-2",
+                "mainComponentName": "Navigation Bar Copy",
+            },
+            {
+                "standardName": "Feature Card",
+                "instanceId": "bad-3",
+                "mainComponentId": "bad-main-3",
+                "mainComponentName": "Feature Card",
+            },
+            {
+                "standardName": "Table / Data Row Expanded",
+                "instanceId": "bad-4",
+                "mainComponentId": "bad-main-4",
+                "mainComponentName": "Table / Data Row Expanded",
+            },
+        ]
+    code, result = run_validator(inventory)
+    if inventory["blocks"]:
+        assert code == 1
+        assert_blocking_contains(result, "block 'Dashboard Shell' missing required component instances")
+
+
+def test_block_detached_instance_fails() -> None:
+    inventory = full_inventory()
+    if inventory["blocks"]:
+        inventory["blocks"][0]["requiredComponentInstances"][0]["mainComponentId"] = None
+    code, result = run_validator(inventory)
+    if inventory["blocks"]:
+        assert code == 1
+        assert_blocking_contains(result, "missing mainComponentId")
 
 
 def test_source_label_warning_fails() -> None:
@@ -195,6 +249,8 @@ def main() -> int:
         test_missing_axes_fail,
         test_section_order_and_duplicate_fail,
         test_block_missing_required_components_fails,
+        test_block_required_components_are_exact,
+        test_block_detached_instance_fails,
         test_source_label_warning_fails,
         test_full_inventory_with_blocks_passes,
         test_legacy_inventory_warns_but_runs,
