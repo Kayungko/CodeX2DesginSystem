@@ -85,7 +85,10 @@ Status on 2026-05-17:
 - Confirmed via Figma Dev Mode MCP read tools that `Figma Inspired / Table / Data Row` stores `Source=Inferred` as a visible text child inside each variant.
 - Hardened the skill, inventory export template, and validator so future inventories treat visible source labels inside component sets or variants as final-blocking.
 - Local baseline inventories validate as `ok=true` with `contractProfile=tier1-31-no-blocks`.
-- Live Figma cleanup is still pending because the write-capable `use_figma` tool is currently failing MCP client handshake; rerun the cleanup script once write access is restored.
+- Live Figma cleanup completed after plugin authorization recovered.
+- Removed 24 visible `Source=Inferred` text layers from component variants across the three pages: 8 in Figma Inspired, 8 in Spotify Inspired, and 8 in VoltAgent Inspired.
+- Verified by read-only scan that all three pages now have `totalSourceTexts=0` and `insideCount=0`.
+- Verified `Figma Inspired / Table / Data Row` now has only the visible row title in each variant; `Source=Inferred` remains in component and variant descriptions.
 
 ## Validation Commands
 
@@ -114,3 +117,9 @@ Store screenshot targets in the `screenshots[]` array of each v2 inventory after
 - Theme-Specific Components
 - Patterns
 - Examples
+
+Additional source-label cleanup QA targets:
+
+- `Table / Data Row`: `169:107`
+- `Navigation & Layout`: `169:38`
+- `Feedback & Overlays`: `169:42`
