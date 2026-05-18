@@ -130,6 +130,28 @@ Status on 2026-05-17:
 - Verified via read-only Figma scan: 11 present blocks, section overlaps `[]`, `sourceLabelWarnings=[]`, `instanceDetachWarnings=[]`.
 - Remaining omitted blocks reduced from 13 to 7. They require contextual/broader dependencies and stay warnings, not final-blocking.
 
+## Figma Inspired Extension Components Phase 1
+
+Status on 2026-05-19:
+
+- Continued only on `Figma Inspired`; no new Blocks were generated in this pass.
+- Added 16 inferred extension component sets:
+  - Form & Input Controls: `Calendar / Date Picker` (`220:430`), `Combobox` (`220:467`), `Input Group` (`220:502`), `Input OTP` (`220:557`).
+  - Navigation & Layout: `Avatar` (`221:146`), `Breadcrumb` (`221:159`), `Pagination` (`221:220`), `Carousel` (`221:265`).
+  - Feedback & Overlays: `Alert` (`222:142`), `Skeleton` (`222:170`), `Spinner` (`222:183`), `Drawer / Sheet` (`222:202`), `Popover` (`222:239`).
+  - Patterns: `Hero CTA Group` (`224:158`), `Footer / Dark Section` (`224:189`), `Upload Zone` (`224:208`).
+- Each new component set is a real Figma component set with minimum usable variants and metadata `Source=Inferred; StandardComponentContract=Extension` or `ContextualExtension`.
+- Section positions were expanded and downstream sections moved to preserve spacing; read-only scan returned section overlaps `[]`, `sourceLabelWarnings=[]`, and `instanceDetachWarnings=[]`.
+- Updated `docs/figma-inspired-standard-inventory.json` with new component set records, updated section bounds, shifted existing block bounds, and added extension screenshot targets.
+- Dependency impact for remaining omitted blocks:
+  - `Hero Section` now has `Hero CTA Group`.
+  - `Footer Section` now has `Footer / Dark Section`.
+  - `Testimonial Carousel` now has `Carousel` and `Avatar`.
+  - `Sign Up Page` now has `Input OTP`, `Input Group`, and existing `Alert`.
+  - `File Upload Zone` now has `Upload Zone`; `File Card` remains outstanding.
+  - `Analytics View` still needs `Chart Container`, `Filter Bar`, and `Data Toolbar`.
+  - `Chat Interface` still needs `Chat Bubble`, `Message Input`, and `Scroll Area`.
+
 ## Validation Commands
 
 ```powershell
@@ -141,7 +163,7 @@ python skills/design-md-to-figma-system/scripts/validate_component_contract.py d
 
 Latest local results:
 
-- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `present_blocks=11`, `omitted_blocks=7`.
+- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `component_set_count=57`, `present_blocks=11`, `omitted_blocks=7`.
 - Spotify Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
 - VoltAgent Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
 

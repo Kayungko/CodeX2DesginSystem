@@ -46,7 +46,7 @@
         "x": 0,
         "width": 2240,
         "y": 7639,
-        "height": 2886
+        "height": 3414
       },
       "standardName": "Form & Input Controls"
     },
@@ -57,8 +57,8 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 10765,
-        "height": 2436
+        "y": 11293,
+        "height": 2786
       },
       "standardName": "Navigation & Layout"
     },
@@ -69,8 +69,8 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 13441,
-        "height": 1870
+        "y": 14319,
+        "height": 2682
       },
       "standardName": "Feedback & Overlays"
     },
@@ -81,7 +81,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 15551,
+        "y": 17241,
         "height": 1028
       },
       "standardName": "Theme-Specific Components"
@@ -93,7 +93,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 16819,
+        "y": 18509,
         "height": 3600
       },
       "standardName": "Blocks"
@@ -105,8 +105,8 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 20659,
-        "height": 3200
+        "y": 22349,
+        "height": 3848
       },
       "standardName": "Patterns"
     },
@@ -117,7 +117,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 24099,
+        "y": 26437,
         "height": 2382
       },
       "standardName": "Examples"
@@ -129,7 +129,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 26721,
+        "y": 29059,
         "height": 740
       },
       "standardName": "Reference Notes"
@@ -621,6 +621,199 @@
         "State"
       ],
       "id": "209:85"
+    },
+    {
+      "name": "Figma Inspired / Calendar / Date Picker",
+      "standardName": "Calendar / Date Picker",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": "220:430"
+    },
+    {
+      "name": "Figma Inspired / Combobox",
+      "standardName": "Combobox",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 6,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": "220:467"
+    },
+    {
+      "name": "Figma Inspired / Input Group",
+      "standardName": "Input Group",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 6,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": "220:502"
+    },
+    {
+      "name": "Figma Inspired / Input OTP",
+      "standardName": "Input OTP",
+      "section": "Form & Input Controls",
+      "sourceStatus": "Inferred",
+      "variantCount": 6,
+      "variantProperties": [
+        "Value",
+        "State"
+      ],
+      "id": "220:557"
+    },
+    {
+      "name": "Figma Inspired / Avatar",
+      "standardName": "Avatar",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 9,
+      "variantProperties": [
+        "Variant",
+        "Size",
+        "State"
+      ],
+      "id": "221:146"
+    },
+    {
+      "name": "Figma Inspired / Breadcrumb",
+      "standardName": "Breadcrumb",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": "221:159"
+    },
+    {
+      "name": "Figma Inspired / Pagination",
+      "standardName": "Pagination",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Density",
+        "State"
+      ],
+      "id": "221:220"
+    },
+    {
+      "name": "Figma Inspired / Carousel",
+      "standardName": "Carousel",
+      "section": "Navigation & Layout",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Variant",
+        "State"
+      ],
+      "id": "221:265"
+    },
+    {
+      "name": "Figma Inspired / Alert",
+      "standardName": "Alert",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Tone",
+        "State"
+      ],
+      "id": "222:142"
+    },
+    {
+      "name": "Figma Inspired / Skeleton",
+      "standardName": "Skeleton",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 6,
+      "variantProperties": [
+        "Variant",
+        "Density"
+      ],
+      "id": "222:170"
+    },
+    {
+      "name": "Figma Inspired / Spinner",
+      "standardName": "Spinner",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 6,
+      "variantProperties": [
+        "Size",
+        "Tone"
+      ],
+      "id": "222:183"
+    },
+    {
+      "name": "Figma Inspired / Drawer / Sheet",
+      "standardName": "Drawer / Sheet",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 3,
+      "variantProperties": [
+        "Side",
+        "Size",
+        "State"
+      ],
+      "id": "222:202"
+    },
+    {
+      "name": "Figma Inspired / Popover",
+      "standardName": "Popover",
+      "section": "Feedback & Overlays",
+      "sourceStatus": "Inferred",
+      "variantCount": 6,
+      "variantProperties": [
+        "Placement",
+        "State"
+      ],
+      "id": "222:239"
+    },
+    {
+      "name": "Figma Inspired / Hero CTA Group",
+      "standardName": "Hero CTA Group",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Variant",
+        "Surface"
+      ],
+      "id": "224:158"
+    },
+    {
+      "name": "Figma Inspired / Footer / Dark Section",
+      "standardName": "Footer / Dark Section",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Variant",
+        "Surface"
+      ],
+      "id": "224:189"
+    },
+    {
+      "name": "Figma Inspired / Upload Zone",
+      "standardName": "Upload Zone",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "State"
+      ],
+      "id": "224:208"
     }
   ],
   "validation": {
@@ -704,6 +897,26 @@
       "label": "Onboarding Stepper",
       "nodeId": "209:188",
       "purpose": "Blocks v3 phase 2 visual QA"
+    },
+    {
+      "label": "Extension / Form & Input Controls",
+      "nodeId": "169:34",
+      "purpose": "Extension component sets visual QA"
+    },
+    {
+      "label": "Extension / Navigation & Layout",
+      "nodeId": "169:38",
+      "purpose": "Extension component sets visual QA"
+    },
+    {
+      "label": "Extension / Feedback & Overlays",
+      "nodeId": "169:42",
+      "purpose": "Extension component sets visual QA"
+    },
+    {
+      "label": "Extension / Patterns",
+      "nodeId": "40:26",
+      "purpose": "Contextual extension component sets visual QA"
     }
   ],
   "blocks": [
@@ -714,7 +927,7 @@
       "id": "203:39",
       "bounds": {
         "x": 80,
-        "y": 17010,
+        "y": 18700,
         "width": 640,
         "height": 411
       },
@@ -759,7 +972,7 @@
       "id": "203:61",
       "bounds": {
         "x": 748,
-        "y": 17010,
+        "y": 18700,
         "width": 640,
         "height": 271
       },
@@ -798,7 +1011,7 @@
       "id": "203:75",
       "bounds": {
         "x": 1416,
-        "y": 17010,
+        "y": 18700,
         "width": 640,
         "height": 266
       },
@@ -837,7 +1050,7 @@
       "id": "203:89",
       "bounds": {
         "x": 80,
-        "y": 17449,
+        "y": 19139,
         "width": 640,
         "height": 481
       },
@@ -894,7 +1107,7 @@
       "id": "203:119",
       "bounds": {
         "x": 748,
-        "y": 17449,
+        "y": 19139,
         "width": 640,
         "height": 318
       },
@@ -921,7 +1134,7 @@
       "id": "209:86",
       "bounds": {
         "x": 1416,
-        "y": 17449,
+        "y": 19139,
         "width": 640,
         "height": 531
       },
@@ -972,7 +1185,7 @@
       "id": "209:106",
       "bounds": {
         "x": 80,
-        "y": 18008,
+        "y": 19698,
         "width": 640,
         "height": 434
       },
@@ -1011,7 +1224,7 @@
       "id": "209:122",
       "bounds": {
         "x": 748,
-        "y": 18008,
+        "y": 19698,
         "width": 640,
         "height": 404
       },
@@ -1062,7 +1275,7 @@
       "id": "209:147",
       "bounds": {
         "x": 1416,
-        "y": 18008,
+        "y": 19698,
         "width": 640,
         "height": 443
       },
@@ -1125,7 +1338,7 @@
       "id": "209:178",
       "bounds": {
         "x": 80,
-        "y": 18479,
+        "y": 20169,
         "width": 640,
         "height": 318
       },
@@ -1152,7 +1365,7 @@
       "id": "209:188",
       "bounds": {
         "x": 748,
-        "y": 18479,
+        "y": 20169,
         "width": 640,
         "height": 275
       },
