@@ -152,6 +152,27 @@ Status on 2026-05-19:
   - `Analytics View` still needs `Chart Container`, `Filter Bar`, and `Data Toolbar`.
   - `Chat Interface` still needs `Chat Bubble`, `Message Input`, and `Scroll Area`.
 
+## UI2 Editor Workbench Adaptation
+
+Status on 2026-05-19:
+
+- Analyzed `UI2 - Figma's Design System - Community Copy` main component page and `Editor template`; see `docs/UI2_EDITOR_WORKBENCH_ANALYSIS.md`.
+- Identified the reusable workbench anatomy: 40px top toolbar, 240px left page/layer sidebar, central canvas, right inspector, compact 32px rows, menus/overlays/windows as secondary follow-up primitives.
+- Implemented a derived UI2 workbench kit in `Patterns` for all three style pages without adding new top-level sections:
+  - `Workbench Toolbar`
+  - `Workbench Sidebar`
+  - `Workbench Layer Row`
+  - `Workbench Control Row`
+  - `Workbench Shell`
+  - `UI2 Editor Template Reference`
+- Node IDs:
+  - Figma Inspired: `228:444`, `228:445`, `228:446`, `228:447`, `228:448`, P4 reference `233:122`.
+  - Spotify Inspired: `228:821`, `228:822`, `228:823`, `228:824`, `228:825`, P4 reference `233:142`.
+  - VoltAgent Inspired: `228:1198`, `228:1199`, `228:1200`, `228:1201`, `228:1202`, P4 reference `233:162`.
+- The initial simplified editor examples were replaced with exact `Page 4` template clones so the workbench keeps the UI2 1680 x 880 proportions, 40px toolbar, 240px sidebars, central paint mixer, and real inspector panel stack.
+- Read-only Figma validation returned section overlaps `[]` and `sourceLabelWarnings=[]` for all three pages.
+- Updated all three local inventories with workbench component sets, updated `Patterns` / downstream section bounds, and added screenshot targets for the template examples.
+
 ## Validation Commands
 
 ```powershell
@@ -163,9 +184,9 @@ python skills/design-md-to-figma-system/scripts/validate_component_contract.py d
 
 Latest local results:
 
-- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `component_set_count=57`, `present_blocks=11`, `omitted_blocks=7`.
-- Spotify Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
-- VoltAgent Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`.
+- Figma Inspired: `ok=true`, `contractProfile=full-blocks-v3`, `finalBlocking=[]`, `schemaWarnings=[]`, `component_set_count=62`, `present_blocks=11`, `omitted_blocks=7`.
+- Spotify Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`, `component_set_count=37`.
+- VoltAgent Inspired: `ok=true`, `finalBlocking=[]`, `schemaWarnings=[]`, `component_set_count=38`.
 
 ## Screenshot Node IDs
 

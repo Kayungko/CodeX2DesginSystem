@@ -106,7 +106,7 @@
         "x": 0,
         "width": 2240,
         "y": 22349,
-        "height": 3848
+        "height": 6280
       },
       "standardName": "Patterns"
     },
@@ -117,7 +117,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 26437,
+        "y": 28869,
         "height": 2382
       },
       "standardName": "Examples"
@@ -129,7 +129,7 @@
       "bounds": {
         "x": 0,
         "width": 2240,
-        "y": 29059,
+        "y": 31491,
         "height": 740
       },
       "standardName": "Reference Notes"
@@ -814,6 +814,66 @@
         "State"
       ],
       "id": "224:208"
+    },
+    {
+      "name": "Figma Inspired / Workbench Toolbar",
+      "standardName": "Workbench Toolbar",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Mode",
+        "State"
+      ],
+      "id": "228:444"
+    },
+    {
+      "name": "Figma Inspired / Workbench Sidebar",
+      "standardName": "Workbench Sidebar",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Side",
+        "Density"
+      ],
+      "id": "228:445"
+    },
+    {
+      "name": "Figma Inspired / Workbench Layer Row",
+      "standardName": "Workbench Layer Row",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 8,
+      "variantProperties": [
+        "Kind",
+        "State"
+      ],
+      "id": "228:446"
+    },
+    {
+      "name": "Figma Inspired / Workbench Control Row",
+      "standardName": "Workbench Control Row",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 8,
+      "variantProperties": [
+        "Kind",
+        "State"
+      ],
+      "id": "228:447"
+    },
+    {
+      "name": "Figma Inspired / Workbench Shell",
+      "standardName": "Workbench Shell",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Mode",
+        "Density"
+      ],
+      "id": "228:448"
     }
   ],
   "validation": {
@@ -917,6 +977,11 @@
       "label": "Extension / Patterns",
       "nodeId": "40:26",
       "purpose": "Contextual extension component sets visual QA"
+    },
+    {
+      "label": "UI2 Workbench / Figma Inspired",
+      "nodeId": "233:122",
+      "purpose": "P4 exact UI2 editor template reference visual QA"
     }
   ],
   "blocks": [

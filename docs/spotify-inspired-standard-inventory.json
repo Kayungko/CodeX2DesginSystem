@@ -3,74 +3,124 @@
   "styleName": "Spotify Inspired",
   "sections": [
     {
-      "name": "Spotify Inspired / Overview",
-      "standardName": "Overview",
+      "id": "121:140",
       "index": 0,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Overview",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 0,
+        "height": 1035
+      },
+      "standardName": "Overview"
     },
     {
-      "name": "Spotify Inspired / Foundations",
-      "standardName": "Foundations",
+      "id": "121:175",
       "index": 1,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Foundations",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 1275,
+        "height": 1192
+      },
+      "standardName": "Foundations"
     },
     {
-      "name": "Spotify Inspired / Core Components",
-      "standardName": "Core Components",
+      "id": "121:265",
       "index": 2,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Core Components",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 2707,
+        "height": 3112
+      },
+      "standardName": "Core Components"
     },
     {
-      "name": "Spotify Inspired / Form & Input Controls",
-      "standardName": "Form & Input Controls",
+      "id": "171:34",
       "index": 3,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Form & Input Controls",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 6059,
+        "height": 1452
+      },
+      "standardName": "Form & Input Controls"
     },
     {
-      "name": "Spotify Inspired / Navigation & Layout",
-      "standardName": "Navigation & Layout",
+      "id": "171:38",
       "index": 4,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Navigation & Layout",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 7751,
+        "height": 1634
+      },
+      "standardName": "Navigation & Layout"
     },
     {
-      "name": "Spotify Inspired / Feedback & Overlays",
-      "standardName": "Feedback & Overlays",
+      "id": "171:42",
       "index": 5,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Feedback & Overlays",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 9625,
+        "height": 1706
+      },
+      "standardName": "Feedback & Overlays"
     },
     {
-      "name": "Spotify Inspired / Theme-Specific Components",
-      "standardName": "Theme-Specific Components",
+      "id": "171:46",
       "index": 6,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Theme-Specific Components",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 11571,
+        "height": 1420
+      },
+      "standardName": "Theme-Specific Components"
     },
     {
-      "name": "Spotify Inspired / Patterns",
-      "standardName": "Patterns",
+      "id": "121:414",
       "index": 7,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Patterns",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 13231,
+        "height": 3621
+      },
+      "standardName": "Patterns"
     },
     {
-      "name": "Spotify Inspired / Examples",
-      "standardName": "Examples",
+      "id": "121:474",
       "index": 8,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Examples",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 17092,
+        "height": 1295
+      },
+      "standardName": "Examples"
     },
     {
-      "name": "Spotify Inspired / Reference Notes",
-      "standardName": "Reference Notes",
+      "id": "121:534",
       "index": 9,
-      "id": null,
-      "bounds": null
+      "name": "Spotify Inspired / Reference Notes",
+      "bounds": {
+        "x": 0,
+        "width": 2240,
+        "y": 18627,
+        "height": 756
+      },
+      "standardName": "Reference Notes"
     }
   ],
   "componentSets": [
@@ -453,6 +503,66 @@
         "State"
       ],
       "id": null
+    },
+    {
+      "name": "Spotify Inspired / Workbench Toolbar",
+      "standardName": "Workbench Toolbar",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Mode",
+        "State"
+      ],
+      "id": "228:821"
+    },
+    {
+      "name": "Spotify Inspired / Workbench Sidebar",
+      "standardName": "Workbench Sidebar",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 4,
+      "variantProperties": [
+        "Side",
+        "Density"
+      ],
+      "id": "228:822"
+    },
+    {
+      "name": "Spotify Inspired / Workbench Layer Row",
+      "standardName": "Workbench Layer Row",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 8,
+      "variantProperties": [
+        "Kind",
+        "State"
+      ],
+      "id": "228:823"
+    },
+    {
+      "name": "Spotify Inspired / Workbench Control Row",
+      "standardName": "Workbench Control Row",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 8,
+      "variantProperties": [
+        "Kind",
+        "State"
+      ],
+      "id": "228:824"
+    },
+    {
+      "name": "Spotify Inspired / Workbench Shell",
+      "standardName": "Workbench Shell",
+      "section": "Patterns",
+      "sourceStatus": "Inferred",
+      "variantCount": 2,
+      "variantProperties": [
+        "Mode",
+        "Density"
+      ],
+      "id": "228:825"
     }
   ],
   "validation": {
@@ -465,7 +575,15 @@
       "boundVisualNodeCount": null,
       "hardcodedFillWarnings": []
     },
-    "sourceLabelWarnings": []
+    "sourceLabelWarnings": [],
+    "screenshotWarnings": []
   },
-  "contractProfile": "tier1-31-no-blocks"
+  "contractProfile": "tier1-31-no-blocks",
+  "screenshots": [
+    {
+      "label": "UI2 Workbench / Spotify Inspired",
+      "nodeId": "233:142",
+      "purpose": "P4 exact UI2 editor template reference visual QA"
+    }
+  ]
 }
